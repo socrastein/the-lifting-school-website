@@ -1,0 +1,190 @@
+:root {
+
+    /* RGB Codes for Custom Colors */
+    --white-smoke:      243, 243, 243;
+    --charcoal:         51, 51, 51;
+    --magenta:          144, 0, 144;
+    --deep-purple:      68, 0, 68;
+    --green:            0, 144, 0;
+
+    /* Custom Sizing for Grid Columns */
+    --auto-grid-min-size: 16rem; 
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(var(--charcoal));
+}
+
+@keyframes rotation {
+    from {
+        transform: scale(1) rotate(0);
+    }
+
+    to {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(var(--white-smoke));
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: max(1%, 8px) 3%;
+    background-color: #333;
+}
+
+.headerText {
+    color: rgb(var(--white-smoke));
+}
+
+#siteID {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#siteName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+#siteName p {
+    margin: 0;
+}
+
+#bizName {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#bizLogo {
+    height: 50px;
+    width:  50px;
+}
+
+#tagLine {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#menuIcon {
+    height: 50px;
+    width: 50px;
+    filter: invert(100%);
+
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+#menuBar {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 1rem;
+    padding-left: 24px;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#menuBar p {
+    margin: 0;
+}
+
+
+#mainContainer {
+    height: 800px;
+}
+
+
+.footerLogo {
+    height: 2rem;
+    width: 2rem;
+}
+
+.footerLogo:hover {
+    animation: rotation .75s;
+    animation-fill-mode: forwards;
+}
+
+#gitLogo {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+footer {
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+#footerTop, #footerBot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#socialMediaIcons {
+    display: flex;
+    gap: 1rem;
+    padding: 0 .5rem;
+}
+
+#footerTop {
+    font-size: .9rem;
+}
+
+#footerBot {
+    font-size: .9rem;
+}
