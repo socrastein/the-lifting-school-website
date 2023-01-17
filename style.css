@@ -55,7 +55,9 @@ a:link {
 }
 
 a:visited {
-
+    border-color: rgb(var(--magenta));
+    border-style: solid;
+    border-width: 1px;
 }
 
 a:hover {
@@ -66,6 +68,10 @@ a:active {
 
 }
 
+/****/
+/* HEADER */
+/****/
+
 #header {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +79,8 @@ a:active {
     justify-content: space-between;
     align-items: flex-end;
     padding: max(1%, 8px) 3%;
-    background-color: #333;
+    background-color: rgb(var(--charcoal));
+    box-shadow: 0 1px 10px -2px rgb(var(--deep-purple));
 }
 
 .headerText {
@@ -116,7 +123,6 @@ a:active {
     height: 50px;
     width: 50px;
     filter: invert(100%);
-
     position: absolute;
     right: 8px;
     top: 5px;
@@ -133,15 +139,78 @@ a:active {
     font-size: 1.2rem;
 }
 
-#menuBar p {
+.menuBarItem {
     margin: 0;
 }
 
-
-#mainContainer {
-    height: 800px;
+.menuBarItem:hover {
+    transform: scale(1.1);
 }
 
+/****/
+/* MAIN BODY CONTENT */
+/****/
+
+#mainContainer {
+    min-height: 800px;
+    padding: 0 3%;
+    text-align: center;
+}
+
+#titleContainer {
+
+}
+
+#pageTitle, #pageSubTitle {
+    text-align: center;
+}
+
+#pageSubTitle {
+    font-style: italic;
+}
+
+.checkList {
+    margin: 0 auto;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.checkListItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkIcon {
+    width: 2rem;
+    font-size: 2.5rem;
+    color: green;
+}
+
+.XIcon {
+    width: 2rem;
+    font-size: 1.2rem;
+}
+
+.signUpButton {
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: rgb(var(--magenta));
+    border-style: none;
+    box-shadow: 3px 3px 6px rgb(var(--deep-purple));
+    color: rgb(var(--white-smoke));
+}
+
+
+/****/
+/* FOOTER */
+/****/
 
 .footerLogo {
     height: 2rem;
@@ -159,12 +228,13 @@ a:active {
 }
 
 footer {
-    padding: 5% 3%;
+    padding: 1.5rem 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+    box-shadow: 0 -1px 5px -2px rgb(var(--deep-purple));
 }
 
 #footerTop, #footerBot {

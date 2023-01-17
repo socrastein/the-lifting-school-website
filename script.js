@@ -53,7 +53,7 @@ const openMenuBar = function() {
     menuBar.style.top = "0px";
     menuBar.style.left = "0px";
     menuBar.style.backgroundColor = "rgb(var(--charcoal))";
-    menuBar.style.width = "100vw";
+    menuBar.style.width = "94vw";
     menuBar.style.padding = "3%";
     menuIcon.style.zIndex = "5";
     menuIcon.setAttribute("src", "./icons/close.svg");
