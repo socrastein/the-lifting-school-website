@@ -1,8 +1,8 @@
-const menuBar = document.getElementById("menuBar");
-const menuIcon = document.getElementById("menuIcon");
-const bizLogo = document.getElementById("bizLogo");
-const bizName = document.getElementById("bizName");
-const tagLine = document.getElementById("tagLine");
+const menuBar   = document.getElementById("menuBar");
+const menuIcon  = document.getElementById("menuIcon");
+const bizLogo   = document.getElementById("bizLogo");
+const bizName   = document.getElementById("bizName");
+const tagLine   = document.getElementById("tagLine");
 
 var screenWidth = window.screen.width;
 

@@ -9,11 +9,13 @@
 
     /* Custom Sizing for Grid Columns */
     --auto-grid-min-size: 16rem; 
+    /* repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); */
 }
 
 * {
     font-family: 'Ubuntu', sans-serif;
     color: rgb(var(--charcoal));
+    box-sizing: border-box;
 }
 
 @keyframes rotation {
@@ -36,16 +38,31 @@
     }
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     padding: 0;
     margin: 0;
     background-color: rgb(var(--white-smoke));
 }
 
-.hidden {
-    display: none;
+h1 {
+    font-size: 2.2rem;
 }
-
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
 p {
     margin: 0;
 }
@@ -68,9 +85,9 @@ a:active {
 
 }
 
-/****/
+/* ********** */
 /* HEADER */
-/****/
+/* ********** */
 
 #header {
     display: flex;
@@ -126,7 +143,7 @@ a:active {
     position: absolute;
     right: 8px;
     top: 5px;
-}
+}/****/
 
 #menuBar {
     display: flex;
@@ -147,36 +164,123 @@ a:active {
     transform: scale(1.1);
 }
 
-/****/
+/* ********** */
 /* MAIN BODY CONTENT */
-/****/
+/* ********** */
 
 #mainContainer {
-    min-height: 800px;
-    padding: 0 3%;
-    text-align: center;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
 }
 
-#titleContainer {
+#homeTop {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#homeIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 2rem 3%;
+    gap: 1rem;
+    width: min(800px, 100vw);
 }
 
 #pageTitle, #pageSubTitle {
     text-align: center;
+    margin: 0;
 }
 
 #pageSubTitle {
     font-style: italic;
 }
 
-.checkList {
-    margin: 0 auto;
-    width: 320px;
+.signUpButton {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(var(--magenta));
+    border-style: none;
+    box-shadow: 3px 3px 6px rgb(var(--deep-purple));
+    color: rgb(var(--white-smoke));
+}
 
+#weights {
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./pics/grip.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    min-height: 300px;
+    min-width: 320px;
+}
+
+/* ********** */
+
+#goalsContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#goalsContainer h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#goalsContainer h3 {
+    font-size: 1.8rem;
+    margin: 12px 0;
+}
+
+#goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 1fr));
+    gap: 3rem;
+    justify-items: center;
+    padding: 3%;
+    width: 100%;
+}
+
+.goal {
+    flex: 1;
+    text-align: center;
+}
+
+.goalIcon {
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(var(--deep-purple));
+    height: 100px;
+    width: 100px;
+}
+
+/* ********** */
+
+.checkList {
+    margin: 0 auto;
+    width: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 1rem;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    gap: 2rem;
 }
 
 .checkListItem {
@@ -196,25 +300,52 @@ a:active {
     font-size: 1.2rem;
 }
 
-.signUpButton {
-    height: 2rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: rgb(var(--magenta));
-    border-style: none;
-    box-shadow: 3px 3px 6px rgb(var(--deep-purple));
-    color: rgb(var(--white-smoke));
+/* ********** */
+
+#mattBio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 3%;
 }
 
+#mattPic {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgb(var(--deep-purple));
+    filter: saturate(.6)
+}
 
-/****/
+#bioText {
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 800px;
+}
+
+#bioSig {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* ********** */
+
+#callToAction {
+    display: flex;
+}
+
+#actionBox {
+
+}
+
+/* ********** */
 /* FOOTER */
-/****/
+/* ********** */
 
 .footerLogo {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .footerLogo:hover {
@@ -223,30 +354,37 @@ a:active {
 }
 
 #gitLogo {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 footer {
-    padding: 1.5rem 3%;
+    padding: 12rem 3% 3rem 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    gap: 1rem;
-    box-shadow: 0 -1px 5px -2px rgb(var(--deep-purple));
+    gap: 2rem;
 }
 
 #footerTop, #footerBot {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: .5rem;
+}
 
+#siteCopyright {
+    text-align: center;
+}
+
+#siteMail {
+    color: rgb(var(--magenta));
 }
 
 #socialMediaIcons {
     display: flex;
+    flex-grow: 1;
     gap: 1rem;
     padding: 0 .5rem;
 }

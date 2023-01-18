@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <div id="header"> 
@@ -49,54 +50,132 @@
     <!-- MAIN BODY -->
     <div id="mainContainer">
 
-        <div id="titleContainer">
-            <h1 id="pageTitle">Custom Online Training Programs</h1>
-            <h2 id="pageSubTitle">Because cookie cutters are for cookies</h2>
+        <div id="homeTop">
+
+            <div id="homeIntro">
+                <h1 id="pageTitle">Custom Online Training Programs</h1>
+                <h2 id="pageSubTitle">Because cookie cutters are for cookies</h2>
+                <h2>You deserve a custom, periodized exercise program created by 
+                    an experienced coach.</h2>
+                <button class="signUpButton">SIGN UP</button>
+            </div>
+    
+            <div id="weights">
+            </div>
+
         </div>
-        <br>
+
+        <div id="goalsContainer">
+
+            <h2>Programs For Any Goal</h2>
+
+            <div id="goals">
+
+                <div class="goal">
+                    <img class="goalIcon" src="./icons/heart.svg">
+                    <h3>Health</h3>
+                    <p>Focus on cardiovascular fitness, mobility and energy levels.</p>
+                </div>
+
+                <div class="goal">
+                    <img class="goalIcon" src="./icons/dumbbell.svg">
+                    <h3>Strength</h3>
+                    <p>Build up to heavy loads intelligently, without ever pushing through joint pain.</p>
+
+                </div>
+
+                <div class="goal">
+                    <img class="goalIcon" src="./icons/bike.svg">
+                    <h3>Cardio</h3>
+                    <p>Improve speed and endurance with reasonable progressions that won't ruin your joints.</p>
+
+                </div>
+
+                <div class="goal">
+                    <img class="goalIcon" src="./icons/scale.svg">
+                    <h3>Body Comp</h3>
+                    <p>Lose fat and/or build lean mass with consistent, sustainable nutrition habits and workouts.</p>
+                </div>
+
+            </div>
+        </div>
+
+
         <div class="checkList">
-            <div>
+
+            <div class="checkBlock">
+
                 <div class="checkListItem">
                     <p class="checkIcon">&#x2714</p>
                     <h3>Personalized to your goals</h3>
                 </div>
+
                 <div class="checkListItem">
                     <p class="checkIcon">&#x2714</p>
                     <h3>Written by a professional</h3>
                 </div>
+
                 <div class="checkListItem">
                     <p class="checkIcon">&#x2714</p>
                     <h3>Coaching by email & video</h3>
                 </div>
+
             </div>
-            <div>
+
+            <div class="checkBlock">
+
                 <div class="checkListItem">
                     <p class="XIcon">&#10060</p>
                     <h3>No trendy gimmicks</h3>
                 </div>
+
                 <div class="checkListItem">
                     <p class="XIcon">&#10060</p>
                     <h3>No extreme diets</h3>
                 </div>
+
                 <div class="checkListItem">
                     <p class="XIcon">&#10060</p>
-                    <h3>No gym required</h3>
+                    <h3>No lifting through pain</h3>
                 </div>
+
             </div>
+
+        </div>     
+
+        <div id="mattBio">
+
+            <img id="mattPic" src="./pics/matt.JPG">
+            <div>
+                <p id="bioText">
+                    I want to teach you how to lift weights correctly so you can minimize the risks 
+                    and get great results. 
+                    <br><br>
+                    Exercise shouldn't be about getting tired.
+                    <br><br>
+                    The goal is to get better.               
+                </p>
+                <br><br>
+                <p id="bioSig">
+                    -Coach Matt Talley
+                </p>
+            </div>
+
         </div>
-        <br>
-        <button class="signUpButton">SIGN UP</button>
 
-
+        <div id="callToAction">
+            <div id="actionBox">
+                <p></p>
+            </div>
+            <button class="signUpButton">SIGN UP</button>
+        </div>
         
     </div>
 
 
     <footer>
         <div id="footerTop">
-            <p id="siteCopyright">
-                Copyright &copy 2023 The Lifting School
-            </p>
+
             <div id="socialMediaIcons">
                 <a href="https://www.facebook.com/TheLiftingSchool" target="_blank">
                     <img id="facebookLogo"  class="footerLogo" src="./icons/facebook.svg">
@@ -107,7 +186,15 @@
                 <a href="https://www.youtube.com/@theliftingschool3083" target="_blank">
                     <img id="youtubeLogo"   class="footerLogo" src="./icons/youtube.svg">
                 </a>
-            </div>            
+            </div>  
+
+            <p id="siteCopyright">
+                Copyright &copy 2023 The Lifting School
+                <br>
+                Boise, ID 83706
+            </p>
+
+            <a id="siteMail" href="mailto: info@theliftingschool.com">info@theliftingschool.com</a>       
         </div>
 
         <div id="footerBot">
