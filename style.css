@@ -50,6 +50,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     margin: 0;
+    text-align: center;
 }
 
 h1 {
@@ -200,7 +201,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 12rem;
+    gap: 10rem;
 }
 
 #homeTop {
@@ -215,8 +216,8 @@ a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
-    padding: 2rem 3%;
+    justify-content: space-between;
+    padding: 1.5rem 3%;
     gap: 1rem;
     width: min(800px, 100vw);
 }
@@ -239,7 +240,7 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
     flex-grow: 1;
-    min-height: 300px;
+    min-height: 400px;
     min-width: 320px;
 }
 
@@ -269,20 +270,48 @@ a:active {
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-    padding: 1rem;
     box-shadow: 3px 3px 3px rgb(var(--charcoal));
     border-color: rgb(var(--charcoal));
     border-style: solid;
     border-width: 1px;
 }
 
+.cardTop, .cardBottom {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cardTop {
+    width: 100%;
+    height: 12rem;
+    background-color: rgb(var(--charcoal));
+}
+
+.cardTop h3 {
+    color: rgb(var(--white-smoke))
+}
+
+.cardBottom h4 {
+    height: 1.5rem;
+}
+
+.cardBottom h5 {
+    text-align: left;
+}
+
 .cardIcon {
     border-radius: 15px;
     padding: 5px;
-    box-shadow: 5px 5px 5px rgb(var(--deep-purple));
+    box-shadow: 0 0 10px 3px rgb(var(--deep-purple));
     height: 100px;
     width: 100px;
+    filter: invert(100%);
 }
+
 
 /* ********** */
 
@@ -365,7 +394,7 @@ a:active {
     width: 60rem;
 }
 
-.actionBox h4 {
+.actionBox * {
     color: rgb(var(--white-smoke));
 }
 
