@@ -48,20 +48,25 @@ body {
     background-color: rgb(var(--white-smoke));
 }
 
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2.0rem;
 }
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
 }
 h4 {
     font-size: 1.5rem;
 }
 h5 {
     font-size: 1.2rem;
+    font-weight: normal;
 }
 p {
     margin: 0;
@@ -122,7 +127,6 @@ a:active {
 }
 
 #bizName {
-    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -173,7 +177,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 #homeTop {
@@ -231,23 +235,15 @@ a:active {
 
 /* ********** */
 
-#goalsContainer {
+#cardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#goalsContainer h2 {
-    font-size: 2rem;
     text-align: center;
 }
 
-#goalsContainer h3 {
-    font-size: 1.8rem;
-    margin: 12px 0;
-}
 
-#goals {
+#cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 1fr));
     gap: 3rem;
@@ -256,12 +252,21 @@ a:active {
     width: 100%;
 }
 
-.goal {
+.card {
     flex: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgb(var(--charcoal));
+    border-color: rgb(var(--charcoal));
+    border-style: solid;
+    border-width: 1px;
 }
 
-.goalIcon {
+.cardIcon {
     border-radius: 15px;
     padding: 5px;
     box-shadow: 5px 5px 5px rgb(var(--deep-purple));
@@ -277,10 +282,16 @@ a:active {
 
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: flex-start;
     padding: 8px 16px;
     gap: 2rem;
+}
+
+.checkBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
 .checkListItem {
@@ -291,7 +302,6 @@ a:active {
 
 .checkIcon {
     width: 2rem;
-    font-size: 2.5rem;
     color: green;
 }
 
