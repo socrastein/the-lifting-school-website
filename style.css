@@ -147,7 +147,7 @@ a:active {
     position: absolute;
     right: 8px;
     top: 5px;
-}/****/
+}
 
 #menuBar {
     display: flex;
@@ -177,7 +177,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 5rem;
+    gap: 12rem;
 }
 
 #homeTop {
