@@ -14,8 +14,7 @@ const onResize = function() {
         bizLogo.style.width = "30px";
         menuBar.style.display = "none";
         menuIcon.style.display = "flex";
-        tagLine.style.width = "75%";
-        tagLine.style.fontSize = ".9rem";
+        tagLine.style.fontSize = ".8rem";
 
 
     } else {
@@ -24,7 +23,6 @@ const onResize = function() {
         bizLogo.style.width = "50px";
         menuBar.style.display = "flex";
         menuIcon.style.display = "none";
-        tagLine.style.width = "100%";
         tagLine.style.fontSize = "1rem";
     }
 }

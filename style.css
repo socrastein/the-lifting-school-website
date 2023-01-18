@@ -204,22 +204,38 @@ a:active {
     gap: 10rem;
 }
 
-#homeTop {
+.pageTop {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./pics/grip.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
 
-#homeIntro {
+.pageIntro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
-    padding: 1.5rem 3%;
+    justify-content: space-around;
+    padding: 2rem 3rem;
     gap: 1rem;
-    width: min(800px, 100vw);
+    background-color: rgba(0,0,0,.5);
+}
+
+.introTop, .introBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.introTop *, .introBottom * {
+    color: rgb(var(--white-smoke));
 }
 
 #pageTitle, #pageSubTitle {
@@ -228,10 +244,8 @@ a:active {
 }
 
 #pageSubTitle {
-    font-style: italic;
+    font-weight: normal;
 }
-
-
 
 #weights {
     display: block;
@@ -337,6 +351,10 @@ a:active {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.checkListItem h4 {
+    text-align: left;
 }
 
 .checkIcon {
