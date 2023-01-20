@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Download a couple weights (300, 700) of Ubuntu font-->
+    <!--Download a couple weights (300, 700) of Ubuntu & Montserrat fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     
     <title>The Lifting School</title>
     <link rel="stylesheet" href="style.css">
@@ -42,7 +42,7 @@
         <input type="image" src="./icons/menu.svg" id="menuIcon">
 
         <div id="menuBar">
-            <a href="index.html" class="headerText menuBarItem">       Home</a>
+            <a href="index.html" class="headerText menuBarItem currentPage">       Home</a>
             <a href="blog.html" class="headerText menuBarItem">        Blog</a>
             <a href="services.html" class="headerText menuBarItem">    Services</a>
             <a href="contact.html" class="headerText menuBarItem">     Contact</a>
@@ -59,6 +59,8 @@
                 <div class="introTop">
                     <h1 id="pageTitle">Online Training Programs</h1>
                     <h2 id="pageSubTitle">Uniquely tailored to you</h2>
+                    <br>
+                    <h2 id="pageTagline">Be confident in your workouts</h2>
                 </div>
                 <div class="introBottom">
                     <h2>
@@ -89,11 +91,11 @@
                     </div>
                     <div class="cardBottom">
                         <h4>First you fill out a form</h4>
-                        <h5>
-                            detailing your goals, experience, available equipment, favorite 
-                            exercises, pain limitations, etc. This is how we tailor our 
-                            recommendations to your individual needs.
-                        </h5>
+                        <p>
+                            Your goals, experience, available equipment, favorite 
+                            exercises, pain limitations, etc. are how we tailor the workouts
+                            to your individual needs.
+                        </p>
                     </div>
                 </div>
 
@@ -105,10 +107,11 @@
 
                     <div class="cardBottom">
                         <h4>Get a custom program</h4>
-                        <h5>
-                            personally made for you that's uploaded to Google Drive so both you and 
+                        <p>
+                            One personally made for you that's uploaded to 
+                            <a href="https://www.google.com/drive/" target="_blank">Google Drive</a> so both you and 
                             your coach can see, edit and add notes to your workouts.
-                        </h5>
+                        </p>
                     </div>
                 </div>
 
@@ -120,11 +123,11 @@
 
                     <div class="cardBottom">
                         <h4>Record short videos</h4>
-                        <h5> 
-                            of any exerciseyou need some help with, email any questions, concerns 
-                            or obstacles you have along the way, and every 12 weeks schedule a 
-                            private lifting session over video chat.
-                        </h5>
+                        <p> 
+                            Your coach will analyze form videos, answer any questions you have over
+                            email, and schedule a private training session over video chat every 
+                            12 weeks. 
+                        </p>
                     </div>
                 </div>
 
@@ -135,12 +138,12 @@
                     </div>
 
                     <div class="cardBottom">
-                        <h4>Adjustments are made</h4>
-                        <h5>
-                            as needed to steadily progress your workouts, rotate exercise 
-                            variations, adjust to life changes, etc. You're no longer winging it! 
-                            Now you have an expert helping you along the path.
-                        </h5>
+                        <h4>Adjust as needed</h4>
+                        <p>
+                            The program is progressed and exercise variations are rotated in
+                            and out. If your schedule, equipment, goals, etc. change, your workouts
+                            are altered accordingly.
+                        </p>
                     </div>
                 </div>
 
@@ -159,10 +162,10 @@
                         <h3>Health</h3>
                     </div>
                     <div class="cardBottom">
-                        <h5>
+                        <p>
                             Focus on cardiovascular fitness, mobility and energy levels. Exercise 
                             simply to move and feel better.
-                        </h5>
+                        </p>
                     </div>
                 </div>
 
@@ -172,10 +175,10 @@
                         <h3>Strength</h3>
                     </div>
                     <div class="cardBottom">
-                        <h5>
+                        <p>
                             Build up to heavy loads intelligently, without ever pushing through joint
                             pain. 
-                        </h5>
+                        </p>
                     </div>
                 </div>
 
@@ -185,10 +188,10 @@
                         <h3>Cardio</h3>
                     </div>
                     <div class="cardBottom">
-                        <h5>
+                        <p>
                             Improve speed and endurance with reasonable progressions that won't ruin
                             your joints.
-                        </h5>
+                        </p>
                     </div>
                 </div>
 
@@ -198,10 +201,10 @@
                         <h3>Body Comp</h3>
                     </div>
                     <div class="cardBottom">
-                        <h5>
+                        <p>
                             Lose fat and/or build lean mass with consistent, sustainable nutrition
                             habits and workouts.
-                        </h5>
+                        </p>
                     </div>
                 </div>
 
@@ -211,36 +214,52 @@
 
         <div>
             <h2>
-                What Makes This Different?
+                Exceptional Service
             </h2>
             <br><br>
             <div class="checkList">
                 <div class="checkBlock">
                     <div class="checkListItem">
                         <h2 class="checkIcon">&#x2714</h2>
-                        <h4>Personalized to your goals</h4>
+                        <h5>Personalized to your goals</h5>
                     </div>
                     <div class="checkListItem">
                         <h2 class="checkIcon">&#x2714</h2>
-                        <h4>Written by a professional</h4>
+                        <h5>Written by a professional</h5>
                     </div>
                     <div class="checkListItem">
                         <h2 class="checkIcon">&#x2714</h2>
-                        <h4>Coaching by email & video</h4>
+                        <h5>Evidence-based workouts</h5>
+                    </div>
+                    <div class="checkListItem">
+                        <h2 class="checkIcon">&#x2714</h2>
+                        <h5>Sustainable habits</h5>
+                    </div>
+                    <div class="checkListItem">
+                        <h2 class="checkIcon">&#x2714</h2>
+                        <h5>Coaching by email & video</h5>
                     </div>
                 </div>
                 <div class="checkBlock">
                     <div class="checkListItem">
                         <h2 class="XIcon">&#10060</h2>
-                        <h4>NO trendy gimmicks</h4>
+                        <h5>No generic programs</h5>
                     </div>
                     <div class="checkListItem">
                         <h2 class="XIcon">&#10060</h2>
-                        <h4>NO extreme diets</h4>
+                        <h5>No amateur influencers</h5>
                     </div>
                     <div class="checkListItem">
                         <h2 class="XIcon">&#10060</h2>
-                        <h4>NO lifting through pain</h4>
+                        <h5>No trendy gimmicks</h5>
+                    </div>
+                    <div class="checkListItem">
+                        <h2 class="XIcon">&#10060</h2>
+                        <h5>No extreme diets</h5>
+                    </div>
+                    <div class="checkListItem">
+                        <h2 class="XIcon">&#10060</h2>
+                        <h5>No struggling alone</h5>
                     </div>
                 </div>
             </div>
@@ -256,7 +275,7 @@
                     <br><br>
                     Exercise shouldn't be about getting tired or hurt.
                     <br><br>
-                    The goal is to get and feel better.               
+                    The goal is tangible improvement and feeling better.               
                 </p>
                 <br><br>
                 <p id="bioSig">
@@ -268,15 +287,14 @@
 
         <div class="callToAction">
             <div class="actionBox">
-                
-                <h3>
-                    Are you ready to workout with confidence?
-                </h3> 
+                <h2>
+                    Are you ready to <span class="magentaText">workout with confidence?</span>
+                </h2> 
                 <br><br>
-                <h4>
+                <h3>
                     Would you like for everything you're doing to be part of an 
                     expertly-constructed plan to achieve your goals?  
-                </h4>
+                </h3>
             </div>
             <button class="signUpButton">SIGN UP</button>
         </div>

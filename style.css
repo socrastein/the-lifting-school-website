@@ -4,11 +4,11 @@
     --white-smoke:      243, 243, 243;
     --charcoal:         51, 51, 51;
     --magenta:          144, 0, 144;
-    --deep-purple:      68, 0, 68;
+    --deep-purple:      67, 0, 101;
     --green:            0, 144, 0;
 
     /* Custom Sizing for Grid Columns */
-    --auto-grid-min-size: 16rem; 
+    --auto-grid-min-size: 18rem; 
     /* repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); */
 }
 
@@ -55,9 +55,11 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 2.5rem;
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
 }
 h2 {
     font-size: 2.0rem;
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
 }
 h3 {
     font-size: 1.75rem;
@@ -65,30 +67,41 @@ h3 {
 h4 {
     font-size: 1.5rem;
 }
+
 h5 {
-    font-size: 1.2rem;
-    font-weight: normal;
+    font-size: 1.3rem;
 }
+
 p {
     margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
-a:link {
+.magentaText {
+    color: rgb(var(--magenta));
+    font-family: inherit;
+    filter: brightness(1.4);
+}
+
+a:link:not(.menuBarItem) {
     text-decoration: none;
+    font-weight: bold;
+    color: rgb(var(--magenta));
 }
 
-a:visited {
-    border-color: rgb(var(--magenta));
-    border-style: solid;
-    border-width: 1px;
+a:visited:not(.menuBarItem) {
+    text-decoration: none;
+    color: rgb(var(--deep-purple));
+
 }
 
 a:hover {
-
+    text-decoration: none;
 }
 
 a:active {
-
+    text-decoration: none;
 }
 
 .signUpButton {
@@ -146,12 +159,9 @@ a:active {
     gap: 8px;
 }
 
-#siteName p {
-    margin: 0;
-}
-
 #bizName {
     font-weight: 700;
+    font-family: 'Ubuntu';
 }
 
 #bizLogo {
@@ -162,6 +172,7 @@ a:active {
 #tagLine {
     margin-top: 8px;
     margin-bottom: 0;
+    font-family: 'Ubuntu';
 }
 
 #menuIcon {
@@ -186,10 +197,15 @@ a:active {
 
 .menuBarItem {
     margin: 0;
+    text-decoration: none;
 }
 
 .menuBarItem:hover {
     transform: scale(1.1);
+}
+
+.currentPage {
+    box-shadow: 0px 3px rgb(var(--magenta));
 }
 
 /* ********** */
@@ -197,7 +213,7 @@ a:active {
 /* ********** */
 
 #mainContainer {
-    padding: 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -205,15 +221,11 @@ a:active {
 }
 
 .pageTop {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: center;
     background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./pics/grip.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: fit-content;
 }
 
 .pageIntro {
@@ -222,8 +234,8 @@ a:active {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    padding: 2rem 3rem;
-    gap: 1rem;
+    padding: 2rem 2rem;
+    gap: 3rem;
     background-color: rgba(0,0,0,.5);
 }
 
@@ -245,6 +257,14 @@ a:active {
 
 #pageSubTitle {
     font-weight: normal;
+    font-style: italic
+}
+
+#pageTagline {
+    color: rgb(var(--magenta));
+    filter: brightness(1.4);
+    font-size: 2.75rem;
+    font-weight: bolder;
 }
 
 #weights {
@@ -270,9 +290,10 @@ a:active {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 24rem));
     gap: 3rem;
     justify-items: center;
+    justify-content: center;
     padding: 3%;
     width: 100%;
 }
@@ -313,14 +334,10 @@ a:active {
     height: 1.5rem;
 }
 
-.cardBottom h5 {
-    text-align: left;
-}
-
 .cardIcon {
     border-radius: 15px;
     padding: 5px;
-    box-shadow: 0 0 10px 3px rgb(var(--deep-purple));
+    box-shadow: 0 -3px 10px 1px rgb(var(--deep-purple));
     height: 100px;
     width: 100px;
     filter: invert(100%);
@@ -336,7 +353,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 8px 16px;
+    padding: 8px 3%;
     gap: 4rem;
 }
 
@@ -345,25 +362,25 @@ a:active {
     flex-direction: column;
     gap: 1rem;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .checkListItem {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    height: 3rem;
+    gap: 8px;
 }
 
-.checkListItem h4 {
+.checkListItem h5 {
     text-align: left;
 }
 
 .checkIcon {
-    width: 2rem;
     color: green;
 }
 
 .XIcon {
-    width: 2rem;
     font-size: 1.2rem;
 }
 
@@ -412,7 +429,7 @@ a:active {
     width: 60rem;
 }
 
-.actionBox * {
+.actionBox h2, h3 {
     color: rgb(var(--white-smoke));
 }
 
