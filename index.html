@@ -42,10 +42,10 @@
         <input type="image" src="./icons/menu.svg" id="menuIcon">
 
         <div id="menuBar">
-            <a href="index.html" class="headerText menuBarItem currentPage">       Home</a>
-            <a href="blog.html" class="headerText menuBarItem">        Blog</a>
-            <a href="services.html" class="headerText menuBarItem">    Services</a>
-            <a href="contact.html" class="headerText menuBarItem">     Contact</a>
+            <a href="index.html" class="headerText menuBarItem currentPage">    Home</a>
+            <a href="blog.html" class="headerText menuBarItem">                 Blog</a>
+            <a href="services.html" class="headerText menuBarItem">             Services</a>
+            <a href="contact.html" class="headerText menuBarItem">              Contact</a>
         </div>
     </div>
 
@@ -285,6 +285,25 @@
 
         </div>
 
+        <div class="slideShow" id="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="slideContainer">
+                <div id="slideNumber">1/20</div>
+                <div class="slidePic fadeIn" id="clientPhoto">
+                    <img class="slideArrow" id="slideLeft" 
+                    src="./icons/arrow.svg" onclick="previousSlide()">
+                    <img class="slideArrow" id="slideRight" 
+                    src="./icons/arrow.svg" onclick="nextSlide()">
+                </div>
+                
+
+            </div>
+            <div class="slideText fadeIn" id="slideText">
+                <div id="clientName"></div>
+                <div id="clientTestimonial"></div>
+            </div>
+        </div>
+
         <div class="callToAction">
             <div class="actionBox">
                 <h2>
@@ -297,8 +316,8 @@
                 </h3>
             </div>
             <button class="signUpButton">SIGN UP</button>
-        </div>
-        
+        </div>    
+            
     </div>
 
 
@@ -327,7 +346,7 @@
         </div>
 
         <div id="footerBot">
-            <p id="siteCredit">This site was built by Matt Talley (socrastein)</p>
+            <p id="siteCredit">This site was built by Matt Talley</p>
             <a href="https://github.com/socrastein" target="_blank">
                 <img id="gitLogo"       class="footerLogo" src="./icons/github.svg">
             </a>

@@ -63,3 +63,113 @@ onResize();
 window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
 
+const slideShows    = document.getElementsByClassName("slideShow");
+const slideNumber   = document.getElementById("slideNumber");
+const slideText     = document.getElementById("slideText");
+const clientPhoto   = document.getElementById("clientPhoto");
+const clientName    = document.getElementById("clientName");
+const clientText    = document.getElementById("clientTestimonial");
+
+var currentSlide    = 0;
+
+const clients = [
+    {name: 'Katherine C.',
+    photo: './testimonials/katherine.jpg',
+    testimony: `He has given me the tools to be confident and effective while working out on my own at home or at the gym.`},
+    {name: 'Seth N.',
+    photo: './testimonials/seth.jpg',
+    testimony: `I started training as a fellow fitness coach looking to improve my existing athleticism. I have not had a serious exercise related injury since.`},
+    {name: 'Ashish B.',
+    photo: './testimonials/ashish.jpg',
+    testimony: `Matt was like my personal trainer + physical therapist. He fixed my broken back; within a couple of years I was able to deadlift 275 pounds.`},
+    {name: 'Jessica E.',
+    photo: './testimonials/jessica.jpg',
+    testimony: `I honestly thought I knew everything I needed to know about fitness. I was immediately impressed by Matt's knowledge and intelligence.`},
+    {name: 'Justin W.',
+    photo: './testimonials/justin.jpg',
+    testimony: `Matt and I have worked together for 3+ years, his experience and knowledge of lifting as well as of how the body works has been invaluable.`},
+    {name: 'Jon P.',
+    photo: './testimonials/jon.jpg',
+    testimony: `Thank you for teaching me how to workout without a gym, whether outside, rucking or with body weight movements in my living room.`},
+    {name: 'Wonsun S.',
+    photo: './testimonials/wonsun.jpg',
+    testimony: `I was gravely mistaken in categorizing myself as pretty fit. Now, I am stronger than I ever was and I'm even a better runner.`},
+    {name: 'Deborah A.',
+    photo: './testimonials/deborah.jpg',
+    testimony: `This is the first time in my LIFE that my HDL has been in the normal range.  Even in my 20's it was never normal. This is so huge.`},
+    {name: 'Brian G.',
+    photo: './testimonials/brian.jpg',
+    testimony: `My losing streak officially ended last night; my muscle endurance and stamina ultimately helped me to out-play my opponent.`},
+    {name: 'Malloree T.',
+    photo: './testimonials/mal.jpg',
+    testimony: `Not only did the training shape my body, but Matt's focus on mindset changed the way I thought about my body, as well.`},
+    {name: 'Allyson H.',
+    photo: './testimonials/allyson.jpg',
+    testimony: `My balance has improved greatly; I can conquer any hill in Seattle. I feel and look more solid and possess body confidence for the first time.`},
+    {name: 'Tom A.',
+    photo: './testimonials/tom.jpg',
+    testimony: `How fortunate I was to have you as a trainer, role model and caring friend that instilled confidence in me I didn't have prior.`},
+    {name: 'Mark P.',
+    photo: './testimonials/mark.jpg',
+    testimony: `I've learned a TON from you in a very brief time and it took me about 10 minutes to realize how knowledgeable you are.`},
+    {name: 'Rosanna S.',
+    photo: './testimonials/rosanna.jpg',
+    testimony: `The biggest victory of all is that working out is not intimidating for me anymore! Thank you again for teaching me to push myself.`},
+    {name: 'Luis L.',
+    photo: './testimonials/luis.jpg',
+    testimony: `It wasn't the first time I had a personal trainer, but it was the first time I had a good one. I've never been in this great of shape.`},
+    {name: 'Cathy G.',
+    photo: './testimonials/cathy.jpg',
+    testimony: `I love the exercises Matt recommended. I appreciate being able to stay fit without risking injury or stress.`},
+    {name: 'Barbara R.',
+    photo: './testimonials/barbara.jpg',
+    testimony: `I never got bored. In fact, I actually became addicted to exercising. Matt encouraged me to trust myself and push harder.`},
+    {name: 'Derek L.',
+    photo: './testimonials/derek.jpg',
+    testimony: `Transcendence of the mind occurs through Matt's regular motivational insights into life and his passion for sharing philosophic explanations.`},
+    {name: 'Venu K.',
+    photo: './testimonials/venu.jpg',
+    testimony: `Matt is the “injury specialist”. My earlier trainer had no inkling of what the reasons for my pain were, so we would ignore then aggravate it.`},
+    {name: 'Joel H.',
+    photo: './testimonials/joel.jpg',
+    testimony: `I feel like my posture is getting better, my mobility is improving and I am naturally standing straighter and feeling stable in my back.`},
+]
+
+const nextSlide = () =>{
+    if(currentSlide == 19){
+        currentSlide = 0;
+    } else currentSlide += 1;
+    updateSlide();
+}
+
+const previousSlide = () =>{
+    if(currentSlide == 0){
+        currentSlide = 19;
+    } else currentSlide -= 1;
+    updateSlide();
+}
+
+const updateSlide = () =>{
+    clientPhoto.className = 'slidePic';
+    clientName.classname = '';
+    clientText.classname = '';
+    requestAnimationFrame((time)=> {
+        requestAnimationFrame((time)=> {
+            clientPhoto.className = 'slidePic fadeIn';
+            clientName.className = 'fadeIn';
+            clientText.className = 'fadeIn';
+            clientPhoto.style.backgroundImage = `url(${clients[currentSlide].photo})`;
+            clientName.innerHTML = clients[currentSlide].name;
+            clientText.innerHTML = clients[currentSlide].testimony;
+            slideNumber.innerHTML = `${currentSlide + 1}/20`;
+        })
+    })
+}
+
+updateSlide();
+
+console.log(`Hello curious viewer! 
+
+If you have any comments about my website design or the code, especially if you notice any bugs or suboptimal design, I'd love to hear from you:
+             
+    info@theliftingschool.com`)

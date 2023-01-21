@@ -38,6 +38,11 @@
     }
 }
 
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
 .hidden {
     display: none;
 }
@@ -119,6 +124,7 @@ a:active {
     border-style: none;
     box-shadow: 3px 3px 6px rgb(var(--deep-purple));
     color: rgb(var(--white-smoke));
+    transition: transform .8s ease;
 }
 
 .signUpButton:hover {
@@ -167,6 +173,11 @@ a:active {
 #bizLogo {
     height: 50px;
     width:  50px;
+    transition: transform 5s;
+}
+
+#bizLogo:hover {
+    transform: rotate(360deg);
 }
 
 #tagLine {
@@ -198,6 +209,7 @@ a:active {
 .menuBarItem {
     margin: 0;
     text-decoration: none;
+    transition: transform .6s ease;
 }
 
 .menuBarItem:hover {
@@ -205,7 +217,7 @@ a:active {
 }
 
 .currentPage {
-    box-shadow: 0px 3px rgb(var(--magenta));
+    box-shadow: 0px 8px 4px -4px rgb(var(--magenta));
 }
 
 /* ********** */
@@ -398,7 +410,7 @@ a:active {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    box-shadow: 1px 1px 3px rgb(var(--deep-purple));
+    box-shadow: 1px 1px 5px rgb(var(--deep-purple));
     filter: saturate(.6)
 }
 
@@ -432,6 +444,88 @@ a:active {
 .actionBox h2, h3 {
     color: rgb(var(--white-smoke));
 }
+
+/* ********** */
+
+.slideShow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.slideArrow {
+    height: 32px;
+    border-radius: 50%;
+    filter: invert(100%);
+    transition: background-color 0.8s ease;
+}
+
+#slideLeft {
+    transform: rotate(180deg);
+}
+
+.slideArrow:hover {
+    border-radius: 50%;
+    background-color: rgba( 111, 255, 111, .5);
+    transition: background-color 0.8s ease;
+    cursor: pointer;
+}
+
+#slideNumber {
+    background-color: rgb(var(--magenta));
+    box-shadow: 0 2px 5px rgb(var(--deep-purple));
+    letter-spacing: 3px;
+    color: rgb(var(--white-smoke));
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.slidePic {
+    border-radius: 50%;
+    box-shadow: 0 1px 5px rgb(var(--deep-purple));
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./testimonials/seth.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slideText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 1rem;
+    height: 3rem;
+    padding: 0 3%;
+}
+
+#clientName {
+    font-size: 1.8rem;
+    color: rgb(var(--charcoal));
+}
+
+#clientTestimonial {
+    font-size: 1.2rem;
+}
+
+
 
 /* ********** */
 /* FOOTER */
@@ -468,19 +562,20 @@ footer {
     gap: .5rem;
 }
 
-#siteCopyright {
-    text-align: center;
-}
-
-#siteMail {
-    color: rgb(var(--magenta));
-}
-
 #socialMediaIcons {
     display: flex;
     flex-grow: 1;
     gap: 1rem;
     padding: 0 .5rem;
+}
+
+#siteCopyright, #siteCredit {
+    text-align: center;
+    font-size: .9rem;
+}
+
+#siteMail {
+    color: rgb(var(--magenta));
 }
 
 #footerTop {
