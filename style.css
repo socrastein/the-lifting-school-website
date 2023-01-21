@@ -41,6 +41,7 @@
 .fadeIn {
     animation-name: fadeIn;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .hidden {
@@ -56,6 +57,10 @@ body {
 h1, h2, h3, h4, h5 {
     margin: 0;
     text-align: center;
+}
+
+h1, h2 {
+    padding: 0 3%;
 }
 
 h1 {
@@ -302,7 +307,7 @@ a:active {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 24rem));
+    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 20rem));
     gap: 3rem;
     justify-items: center;
     justify-content: center;
@@ -360,21 +365,22 @@ a:active {
 
 .checkList {
     margin: 0 auto;
-    width: fit-content;
+
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     padding: 8px 3%;
     gap: 4rem;
 }
 
 .checkBlock {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     gap: 1rem;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .checkListItem {
@@ -431,7 +437,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 5% 3%;
+    padding: 2rem 3%;
     background-color: rgb(var(--charcoal));
     justify-content: space-around;
     gap: 4rem;
@@ -510,7 +516,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    max-width: min(90vw, 600px);
     gap: 1rem;
     height: 3rem;
     padding: 0 3%;
