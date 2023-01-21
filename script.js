@@ -168,6 +168,57 @@ const updateSlide = () =>{
 
 updateSlide();
 
+const slideContainer = document.getElementById("slideContainer");
+
+slideContainer.addEventListener('touchstart', handleTouchStart, false);
+slideContainer.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
+function getTouches(event) {
+    return event.touches;
+};
+
+function handleTouchStart(event) {
+    const firstTouch = getTouches(event)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+};
+
+function handleTouchMove(event) {
+    if (! xDown || ! yDown) {
+        return;
+    }
+
+    var xUp = event.touches[0].clientX;
+    var yUp = event.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)){
+        if (xDiff > 0) {
+            //right swipe
+            nextSlide();
+        } else {
+            //left swipe
+            previousSlide();
+        }
+    } else {
+        if (yDiff > 0) {
+            //down swipe
+        } else {
+            // up swipe
+        }
+    }
+    // reset values
+    xDown = null;
+    yDown = null;
+}
+
+
+
 console.log(`Hello curious viewer! 
 
 If you have any comments about my website design or the code, especially if you notice any bugs or suboptimal design, I'd love to hear from you:

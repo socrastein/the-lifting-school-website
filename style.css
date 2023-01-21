@@ -456,7 +456,7 @@ a:active {
     margin: 0 auto;
 }
 
-.slideContainer {
+#slideContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
