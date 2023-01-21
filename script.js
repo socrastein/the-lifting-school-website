@@ -63,7 +63,7 @@ onResize();
 window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
 
-const slideShows    = document.getElementsByClassName("slideShow");
+const testimonials  = document.getElementById("testimonials");
 const slideNumber   = document.getElementById("slideNumber");
 const slideText     = document.getElementById("slideText");
 const clientPhoto   = document.getElementById("clientPhoto");
@@ -151,13 +151,9 @@ const previousSlide = () =>{
 
 const updateSlide = () =>{
     clientPhoto.className = 'slidePic';
-    clientName.classname = '';
-    clientText.classname = '';
     requestAnimationFrame((time)=> {
         requestAnimationFrame((time)=> {
             clientPhoto.className = 'slidePic fadeIn';
-            clientName.className = 'fadeIn';
-            clientText.className = 'fadeIn';
             clientPhoto.style.backgroundImage = `url(${clients[currentSlide].photo})`;
             clientName.innerHTML = clients[currentSlide].name;
             clientText.innerHTML = clients[currentSlide].testimony;
@@ -168,10 +164,8 @@ const updateSlide = () =>{
 
 updateSlide();
 
-const slideContainer = document.getElementById("slideContainer");
-
-slideContainer.addEventListener('touchstart', handleTouchStart, false);
-slideContainer.addEventListener('touchmove', handleTouchMove, false);
+testimonials.addEventListener('touchstart', handleTouchStart, false);
+testimonials.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;
 var yDown = null;

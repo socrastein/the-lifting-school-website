@@ -18,6 +18,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: rgb(var(--charcoal));
+    color: rgb(var(--white-smoke));
+}
+
 @keyframes rotation {
     from {
         transform: scale(1) rotate(0);
@@ -84,7 +89,18 @@ p {
     text-align: left;
 }
 
+.whiteText {
+    color: rgb(var(--white-smoke));
+}
+
 .magentaText {
+    /* Use on white background */
+    color: rgb(var(--magenta));
+    font-family: inherit;
+}
+
+.magentaTextBright {
+    /* Use on dark background */
     color: rgb(var(--magenta));
     font-family: inherit;
     filter: brightness(1.4);
@@ -213,8 +229,8 @@ a:active {
     transition: transform .6s ease;
 }
 
-.menuBarItem:hover {
-    transform: scale(1.1);
+.menuBarItem:hover:not(.currentPage) {
+    transform: translateY(-3px);
 }
 
 .currentPage {
@@ -259,11 +275,8 @@ a:active {
     gap: 1rem;
 }
 
-.introTop *, .introBottom * {
-    color: rgb(var(--white-smoke));
-}
-
 #pageTitle, #pageSubTitle {
+    letter-spacing: 1px;
     text-align: center;
     margin: 0;
 }
@@ -274,8 +287,6 @@ a:active {
 }
 
 #pageTagline {
-    color: rgb(var(--magenta));
-    filter: brightness(1.4);
     font-size: 2.75rem;
     font-weight: bolder;
 }
@@ -301,9 +312,8 @@ a:active {
 }
 
 #cardContainer h2 {
-    padding: 3%;
+    padding: 0 1rem;
 }
-
 
 #cards {
     display: grid;
@@ -311,7 +321,7 @@ a:active {
     gap: 3rem;
     justify-items: center;
     justify-content: center;
-    padding: 3%;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -363,6 +373,10 @@ a:active {
 
 /* ********** */
 
+.checkListContainer {
+    padding: 2rem 0;
+}
+
 .checkList {
     margin: 0 auto;
     display: flex;
@@ -410,8 +424,9 @@ a:active {
 #mattBio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     padding: 3%;
 }
 
@@ -420,7 +435,15 @@ a:active {
     width: 250px;
     border-radius: 50%;
     box-shadow: 1px 1px 5px rgb(var(--deep-purple));
-    filter: saturate(.6)
+    background-image: url(./pics/matt.JPG);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease;
+}
+
+#mattPic:hover {
+    background-image: url(./pics/matt-weights.jpg);
+    
 }
 
 #bioText {
@@ -463,6 +486,11 @@ a:active {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 8rem;
+}
+
+.slideShow h2 {
+    padding: 0 1rem;
 }
 
 #slideContainer {
@@ -532,6 +560,7 @@ a:active {
 
 #clientTestimonial {
     font-size: 1.2rem;
+    height: 5rem;
 }
 
 
