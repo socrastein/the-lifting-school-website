@@ -89,6 +89,10 @@ p {
     text-align: left;
 }
 
+.darkBackground {
+    background-color: rgb(var(--charcoal));
+}
+
 .whiteText {
     color: rgb(var(--white-smoke));
 }
@@ -162,7 +166,6 @@ a:active {
     align-items: flex-end;
     padding: max(1%, 8px) 3%;
     background-color: rgb(var(--charcoal));
-    box-shadow: 0 1px 10px -2px rgb(var(--deep-purple));
 }
 
 .headerText {
@@ -234,7 +237,7 @@ a:active {
 }
 
 .currentPage {
-    box-shadow: 0px 8px 4px -4px rgb(var(--magenta));
+    box-shadow: 0px 6px 4px -4px rgb(var(--magenta));
 }
 
 /* ********** */
@@ -353,10 +356,6 @@ a:active {
     background-color: rgb(var(--charcoal));
 }
 
-.cardTop h3 {
-    color: rgb(var(--white-smoke))
-}
-
 .cardBottom h4 {
     height: 1.5rem;
 }
@@ -364,10 +363,33 @@ a:active {
 .cardIcon {
     border-radius: 15px;
     padding: 5px;
-    box-shadow: 0 -3px 10px 1px rgb(var(--deep-purple));
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     filter: invert(100%);
+}
+
+.cardTop .darkBackground {
+    padding: 8px;
+    width: 100%;
+}
+
+.cardTop#healthCard {
+    background-image: url(./pics/mobility.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cardTop#strengthCard {
+    background-image: url(./pics/loaded-barbell.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cardTop#cardioCard {
+    background-image: url(./pics/running.jpg);
+    background-size: cover;
+}
+.cardTop#compCard {
+    background-image: url(./pics/female-press.jpg);
+    background-size: cover;
 }
 
 
@@ -473,16 +495,12 @@ a:active {
     width: 60rem;
 }
 
-.actionBox h2, h3 {
-    color: rgb(var(--white-smoke));
-}
-
 /* ********** */
 
 .slideShow {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -498,7 +516,6 @@ a:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
 }
 
 .slideArrow {
@@ -520,6 +537,10 @@ a:active {
 }
 
 #slideNumber {
+    position: relative;
+    bottom: 40px;
+    right: 110px;
+
     background-color: rgb(var(--magenta));
     box-shadow: 0 2px 5px rgb(var(--deep-purple));
     letter-spacing: 3px;
@@ -528,6 +549,7 @@ a:active {
     padding: 8px;
     font-weight: bold;
     border-radius: 10px;
+    z-index: 5;
 }
 
 .slidePic {
