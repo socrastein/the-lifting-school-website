@@ -75,7 +75,7 @@ var currentSlide    = 0;
 const clients = [
     {name: 'Katherine C.',
     photo: './testimonials/katherine.jpg',
-    testimony: `He has given me the tools to be confident and effective while working out on my own at home or at the gym.`},
+    testimony: `Matt has given me the tools to be confident and effective while working out on my own at home or at the gym.`},
     {name: 'Seth N.',
     photo: './testimonials/seth.jpg',
     testimony: `I started training as a fellow fitness coach looking to improve my existing athleticism. I have not had a serious exercise related injury since.`},
