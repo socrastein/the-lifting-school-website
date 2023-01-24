@@ -122,6 +122,18 @@ p {
     filter: brightness(1.4);
 }
 
+.boldText {
+    font-weight: bold;
+}
+
+.smallText {
+    font-size: .9rem;
+}
+
+.centerText {
+    text-align: center;
+}
+
 .flexColumn {
     display: flex;
     flex-direction: column;
@@ -130,6 +142,10 @@ p {
 .flexRow {
     display: flex;
     flex-wrap: wrap;
+}
+
+.centered {
+    margin: 0 auto;
 }
 
 a:link:not(.menuBarItem) {
@@ -606,7 +622,7 @@ a:active {
     height: 5rem;
 }
 
-/* ********** */
+/* ************ */
 /* SIGNUP FORM */
 /* ********** */
 
@@ -618,26 +634,29 @@ a:active {
     gap: 2rem;
     max-width: 96vw;
     margin: 0 auto;
+}
 
+#signupForm h4 {
+    font-weight: normal;
 }
 
 .formBody {
     background-color: rgb(var(--charcoal));
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 2rem min(3%, 3rem);
+
     max-width: 100%;
 }
 
-fieldset {
-    padding: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+legend {
+    border-style: solid;
+    border-color: rgb(var(--white-smoke));
+    border-width: 1px;
+    padding: 8px;
 }
 
 hr {
@@ -667,19 +686,26 @@ hr {
 .formInput {
     height: 1.5rem;
     font-size: 1.1rem;
-    max-width: 80%;
+    width: fit-content;
+    max-width: 90%;
+    border-radius: 8px;
+    border-style: none;
+    padding: 2px 6px;
 }
 
-#formAge {
-    width: 4rem;
+#formPhone, #formGoal, #formGoal2 {
+    max-width: 10rem;
+}
+
+#formAge, #formGender {
+    width: 6rem;
 }
 
 .checkboxField {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    gap: 1rem 2rem;
-    justify-content: flex-start;
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .valid::after {

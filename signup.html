@@ -64,11 +64,11 @@
         <h4>
           Thank you for your interest! This should only take a few minutes. 
           <br><br>
-          Once submitted, we will contact you within the next two business days.
+          Once submitted, we will email you within the next two business days.
         </h4>
-        <h5>
-          For internal use only. We would <em>never</em> share your info with a third party.
-        </h5>
+        <p class="centerText boldText">
+          (We would never sell your data to anyone)
+        </p>
         <!-- First Name, Last Name -->
         <!-- Age, Gender -->
         <!-- Phone, Email, Confirm Email -->
@@ -112,10 +112,9 @@
           <div class="formStacked">
             <label for="formPhone" class="formLabel">
               Phone</label>
-              
             <input id="formPhone" type="text" name="Phone" 
             class="formInput" placeholder="208-555-5555" required>
-            <span class="whiteText">(we won't call or spam text)</span>
+            <span class="whiteText smallText">(we won't call or spam text)</span>
           </div>
           <div class="formStacked">
             <label for="formEmail" class="formLabel" id="labelEmail">
@@ -207,9 +206,9 @@
           </div>
           <div class="formStacked">
             <label for="formGoal2" class="formLabel">
-              Secondary Goal (optional)</label>
+              Secondary Goal</label>
             <select id="formGoal2" name="goal2" class="formInput">
-              <option value="None"></option>
+              <option value="None">(optional)</option>
               <option value="General Health"> General Health</option>
               <option value="Strength">       Strength</option>
               <option value="Cardio">         Cardio</option>
@@ -345,7 +344,7 @@
           -->
 
           <fieldset class="checkboxField formLabel">
-            <legend>Indicate any joint pain experienced in last 3 months</legend>
+            <legend>Mark any joints you've had pain in the last 3 months</legend>
 
             <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
@@ -420,7 +419,10 @@
           </fieldset>
 
           <br>
-          <button class="signUpButton" type="submit">SUBMIT</button>
+          <div class="centered">
+            <button class="signUpButton" type="submit">SUBMIT</button>
+          </div>
+
         </div>
       </form>
         
