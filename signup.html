@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matt Talley">
+    <meta name="description" content="The Lifting School: Sign Up - Form for new clients">
     <!--Download a couple weights (300, 700) of Ubuntu & Montserrat fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     
     <title>The Lifting School - Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="./pics/favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -52,7 +55,7 @@
     <!-- MAIN BODY -->
     <div id="mainContainer">
 
-      <form id="signupForm"
+      <form id="signupForm" name="Sign Up Form" onsubmit="onSubmit()"
       action="https://formspree.io/f/xzbqzwkv" method="POST">
         <div class="darkBackground circleBackground">
           <img class="cardIcon" src="./icons/form.svg">
@@ -60,7 +63,7 @@
         <h1>Sign Up Form</h1>
         <h4>
           Thank you for your interest! This should only take a few minutes. 
-          <br>
+          <br><br>
           Once submitted, we will contact you within the next two business days.
         </h4>
         <h5>
@@ -76,26 +79,29 @@
         <!-- Available equipment -->
         <!-- Recent joint pain -->
         <div class="formBody">
-          <div>
+
+          <div class="formStacked">
             <label for="formFirstName" class="formLabel">
               First Name</label>
-            <input type="text" name="firstName" id="formFirstName" class="formInput" required>
+            <input id="formFirstName" type="text" name="First Name" class="formInput" required>
           </div>
-          <div>
+
+          <div class="formStacked">
             <label for="formLastName" class="formLabel">
               Last Name</label>
-            <input type="text" name="firstName" id="formLastName" class="formInput" required>
+            <input id="formLastName" type="text" name="Last Name"  class="formInput" required>
           </div>
-          <div>
+
+          <div class="formStacked">
             <label for="formAge" class="formLabel">
               Age</label>
-            <input type="number" name="age" id="formAge" class="formInput" min="18" max="90" required>
+            <input id="formAge" type="number" name="Age"  class="formInput" min="18" max="90" required>
           </div>
-          <div>
+
+          <div class="formStacked">
             <label for="formGender" class="formLabel">
               Gender</label>
-            <select name="gender" id="formGender" class="formInput" required>
-
+            <select id="formGender" name="Gender" class="formInput" required>
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
@@ -103,86 +109,94 @@
         
           <hr>
       
-          <div>
+          <div class="formStacked">
             <label for="formPhone" class="formLabel">
               Phone</label>
-            <input type="text" name="phone" id="formPhone" class="formInput" required
-            placeholder="208-555-5555">
+              
+            <input id="formPhone" type="text" name="Phone" 
+            class="formInput" placeholder="208-555-5555" required>
+            <span class="whiteText">(we won't call or spam text)</span>
           </div>
-          <div>
-            <label for="formEmail" class="formLabel">
+          <div class="formStacked">
+            <label for="formEmail" class="formLabel" id="labelEmail">
               Email</label>
-            <input type="email" name="email" id="formEmail" class="formInput"
-            placeholder="you@email.com" required>
+            <input id="formEmail" type="email" name="Email" 
+            class="formInput" placeholder="you@email.com" required>
           </div>
-          <div>
+          <div class="formStacked">
+            <label for="formEmail2" class="formLabel" id="labelEmail2">
+              Confirm Email</label>
+            <input id="formEmail2" type="email" 
+            class="formInput" disabled required>
+          </div>
+          <div class="formStacked">
             <label for="formCity" class="formLabel">
               City</label>
-            <input type="text" name="email" id="formEmail" class="formInput" required>
+            <input id="formCity" type="text" name="City" class="formInput" required>
           </div>
-          <div>
+          <div class="formStacked">
             <label for="formState" class="formLabel">
               State</label>
-            <select name="email" id="formEmail" class="formInput" required>
-              <option value="alabama">Alabama</option>
-              <option value="alaska">Alaska</option>
-              <option value="arizona">Arizona</option>
-              <option value="arkansas">Arkansas</option>
-              <option value="california">California</option>
-              <option value="colorado">Colorado</option>
-              <option value="connecticut">Connecticut</option>
-              <option value="delaware">Delaware</option>
-              <option value="florida">Florida</option>
-              <option value="georgia">Georgia</option>
-              <option value="hawaii">Hawaii</option>
-              <option value="idaho" selected>Idaho</option>
-              <option value="illinois">Illinois</option>
-              <option value="indiana">Indiana</option>
-              <option value="iowa">Iowa</option>
-              <option value="kansas">Kansas</option>
-              <option value="kentucky">Kentucky</option>
-              <option value="louisiana">Louisiana</option>
-              <option value="maine">Maine</option>
-              <option value="maryland">Maryland</option>
-              <option value="massachusetts">Massachusetts</option>
-              <option value="michigan">Michigan</option>
-              <option value="minnesota">Minnesota</option>
-              <option value="mississippi">Mississippi</option>
-              <option value="missouri">Missouri</option>
-              <option value="montana">Montana</option>
-              <option value="nebraska">Nebraska</option>
-              <option value="nevada">Nevada</option>
-              <option value="new hampshire">New Hampshire</option>
-              <option value="new jersey">New Jersey</option>
-              <option value="new mexico">New Mexico</option>
-              <option value="new york">New York</option>
-              <option value="north carolina">North Carolina</option>
-              <option value="north dakota">North Dakota</option>
-              <option value="ohio">Ohio</option>
-              <option value="oklahoma">Oklahoma</option>
-              <option value="oregon">Oregon</option>
-              <option value="pennsylvania">Pennsylvania</option>
-              <option value="rhode island">Rhode-island</option>
-              <option value="south carolina">South-carolina</option>
-              <option value="south dakota">South-dakota</option>
-              <option value="tennessee">Tennessee</option>
-              <option value="texas">Texas</option>
-              <option value="utah">Utah</option>
-              <option value="vermont">Vermont</option>
-              <option value="virginia">Virginia</option>
-              <option value="washington">Washington</option>
-              <option value="west virginia">West Virginia</option>
-              <option value="wisconsin">Wisconsin</option>
-              <option value="wyoming">Wyoming</option>
+            <select id="formEmail" name="State" class="formInput" required>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Cnnecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho" selected>Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode-island</option>
+              <option value="South Carolina">South-carolina</option>
+              <option value="South Dakota">South-dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
             </select>
           </div>
       
           <hr>
 
-          <div>
+          <div class="formStacked">
             <label for="formGoal" class="formLabel">
               Primary Goal</label>
-            <select name="goal" id="formGoal" class="formInput" required>
+            <select id="formGoal" name="goal" class="formInput" required>
               <option value="General Health"> General Health</option>
               <option value="Strength">       Strength</option>
               <option value="Cardio">         Cardio</option>
@@ -191,10 +205,10 @@
               <option value="Sport Training"> Sport Training</option>
             </select>
           </div>
-          <div>
+          <div class="formStacked">
             <label for="formGoal2" class="formLabel">
               Secondary Goal (optional)</label>
-            <select name="goal2" id="formGoal2" class="formInput">
+            <select id="formGoal2" name="goal2" class="formInput">
               <option value="None"></option>
               <option value="General Health"> General Health</option>
               <option value="Strength">       Strength</option>
@@ -205,178 +219,208 @@
             </select>
           </div>
 
-          <div>
+          <div class="formStacked">
             <label class="formLabel">
               Do you have a gym membership?
             </label>
 
-            <input type="radio" class="formInput"
-            id="formGymYes" name="formGymAccess" value="Yes">
-            <label for="formGymYes" class="formLabel">
-              Yes
-            </label>
+            <div class="formRow">
+              <input type="radio" class="formInput"
+              id="formGymYes" name="formGymAccess" value="Yes">
+              <label for="formGymYes" class="formLabel">
+                Yes
+              </label>
+            </div>
             
-            <input type="radio" class="formInput" 
-            id="formGymYes" name="formGymAccess" value="No">
-            <label for="formGymNo" class="formLabel">
-              No
-            </label>
+            <div class="formRow">
+              <input type="radio" class="formInput"
+              id="formGymYes" name="formGymAccess" value="No">
+              <label for="formGymNo" class="formLabel">
+                No
+              </label>
+            </div>
             
           </div>
 
           <hr>
 
-          <div>
+          
 
-            <fieldset class="checkboxField formLabel">
-              <legend>Select all equipment you have access to</legend>
+          <fieldset class="checkboxField formLabel">
+            <legend>Select all equipment you have access to</legend>
 
-              <div>
-                <input type="checkbox" id="formEquipment1" class="formInput" name="equipment" value="Barbell">
-                <label for="formEquipment1" class="formLabel">
-                  Barbell</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment1" class="formInput" 
+              name="equipment" value="Barbell">
+              <label for="formEquipment1" class="formLabel">
+                Barbell</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment2" class="formInput" name="equipment" value="Trap Bar">
-                <label for="formEquipment2" class="formLabel">
-                  Trap Bar</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment2" class="formInput" 
+              name="equipment" value="Trap Bar">
+              <label for="formEquipment2" class="formLabel">
+                Trap Bar</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment3" class="formInput" name="equipment" value="Dumbbells">
-                <label for="formEquipment3" class="formLabel">
-                  Dumbbells</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment3" class="formInput" 
+              name="equipment" value="Dumbbells">
+              <label for="formEquipment3" class="formLabel">
+                Dumbbells</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment4" class="formInput" name="equipment" value="Kettlebells">
-                <label for="formEquipment4" class="formLabel">
-                  Kettlebells</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment4" class="formInput" 
+              name="equipment" value="Kettlebells">
+              <label for="formEquipment4" class="formLabel">
+                Kettlebells</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment5" class="formInput" name="equipment" value="Bands">
-                <label for="formEquipment5" class="formLabel">
-                  Bands</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment5" class="formInput" 
+              name="equipment" value="Bands">
+              <label for="formEquipment5" class="formLabel">
+                Bands</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment6" class="formInput" name="equipment" value="Pull-Up Bar">
-                <label for="formEquipment6" class="formLabel">
-                  Pull-Up Bar</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment6" class="formInput" 
+              name="equipment" value="Pull-Up Bar">
+              <label for="formEquipment6" class="formLabel">
+                Pull-Up Bar</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment8" class="formInput" name="equipment" value="Medicine Ball">
-                <label for="formEquipment8" class="formLabel">
-                  Dip Bar</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment8" class="formInput" 
+              name="equipment" value="Medicine Ball">
+              <label for="formEquipment8" class="formLabel">
+                Dip Bar</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment7" class="formInput" name="equipment" value="Rings/TRX">
-                <label for="formEquipment7" class="formLabel">
-                  Rings/TRX</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment7" class="formInput" 
+              name="equipment" value="Rings/TRX">
+              <label for="formEquipment7" class="formLabel">
+                Rings/TRX</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment8" class="formInput" name="equipment" value="Medicine Ball">
-                <label for="formEquipment8" class="formLabel">
-                  Medicine Balls</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment8" class="formInput" 
+              name="equipment" value="Medicine Ball">
+              <label for="formEquipment8" class="formLabel">
+                Medicine Balls</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment8" class="formInput" name="equipment" value="Medicine Ball">
-                <label for="formEquipment8" class="formLabel">
-                  Flat Bench</label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment8" class="formInput" 
+              name="equipment" value="Medicine Ball">
+              <label for="formEquipment8" class="formLabel">
+                Flat Bench</label>
+            </div>
 
-              <div>
-                <input type="checkbox" id="formEquipment8" class="formInput" name="equipment" value="Medicine Ball">
-                <label for="formEquipment8" class="formLabel">
-                  Incline Bench</label>
-              </div>
-              
-              <div>
-                <input type="checkbox" id="formEquipment8" class="formInput" name="equipment" value="Medicine Ball">
-                <label for="formEquipment8" class="formLabel">
-                  Squat Rack</label>
-                </label>
-              </div>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment8" class="formInput" 
+              name="equipment" value="Medicine Ball">
+              <label for="formEquipment8" class="formLabel">
+                Incline Bench</label>
+            </div>
+            
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment8" class="formInput" 
+              name="equipment" value="Medicine Ball">
+              <label for="formEquipment8" class="formLabel">
+                Squat Rack</label>
+              </label>
+            </div>
 
-            </fieldset>
+          </fieldset>
 
-            <!-- 
-              <input type="file" id="formEquipmentPhoto" class="formInput" name="equipmentPhoto"
-              accept="image/*" multiple>
-              <label for="formEquipmentPhoto" class="formLabel">
-                You may attach up to 5 photos of your available equipment. 
-            -->
+          <hr>
+          <!-- 
+            <input type="file" id="formEquipmentPhoto" class="formInput" name="equipmentPhoto"
+            accept="image/*" multiple>
+            <label for="formEquipmentPhoto" class="formLabel">
+              You may attach up to 5 photos of your available equipment. 
+          -->
 
-            <fieldset class="checkboxField formLabel">
-              <legend>Indicate any joint pain experienced in last 3 months</legend>
+          <fieldset class="checkboxField formLabel">
+            <legend>Indicate any joint pain experienced in last 3 months</legend>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Neck
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Shoulder
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Elbow
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Wrist
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Upper Back
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Lower Back
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Hip
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Knee
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Ankle
               </label>
+            </div>
 
+            <div class="formRow">
               <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
               <label class="formLabel" for="formPain1">
                 Foot
               </label>
+            </div>
 
-            </fieldset>
+          </fieldset>
 
-              
-
-              
-
-          </div>
-
-
-          <hr>
-          <button class="signUpButton">SUBMIT</button>
+          <br>
+          <button class="signUpButton" type="submit">SUBMIT</button>
         </div>
       </form>
         

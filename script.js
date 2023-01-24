@@ -1,3 +1,5 @@
+var pagePath    = window.location.pathname;
+
 const menuBar   = document.getElementById("menuBar");
 const menuIcon  = document.getElementById("menuIcon");
 const bizLogo   = document.getElementById("bizLogo");
@@ -52,16 +54,20 @@ const openMenuBar = function() {
     menuBar.style.left = "0px";
     menuBar.style.backgroundColor = "rgb(var(--charcoal))";
     menuBar.style.width = "100vw";
-    menuBar.style.padding = "3%";
+    menuBar.style.padding = "3rem";
     menuIcon.style.zIndex = "5";
     menuIcon.setAttribute("src", "./icons/close.svg");
     menuIcon.addEventListener("click", closeMenuBar);
     menuIcon.removeEventListener("click", openMenuBar);
 }
 
-onResize();
 window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
+onResize();
+
+/////////////////////////////
+// HOME PAGE SCRIPTING /////
+///////////////////////////
 
 const testimonials  = document.getElementById("testimonials");
 const slideNumber   = document.getElementById("slideNumber");
@@ -69,7 +75,6 @@ const slideText     = document.getElementById("slideText");
 const clientPhoto   = document.getElementById("clientPhoto");
 const clientName    = document.getElementById("clientName");
 const clientText    = document.getElementById("clientTestimonial");
-
 var currentSlide    = 0;
 
 const clients = [
@@ -162,10 +167,11 @@ const updateSlide = () =>{
     })
 }
 
-updateSlide();
+if(pagePath == '/index.html'){
+    testimonials.addEventListener('touchstart', handleTouchStart, false);
+    testimonials.addEventListener('touchmove', handleTouchMove, false);
+}
 
-testimonials.addEventListener('touchstart', handleTouchStart, false);
-testimonials.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;
 var yDown = null;
@@ -211,6 +217,53 @@ function handleTouchMove(event) {
     yDown = null;
 }
 
+/////////////////////////////
+// SIGN UP PAGE SCRIPTING //
+///////////////////////////
+
+const formEmailLabel    = document.getElementById('labelEmail');
+const formEmail2Label   = document.getElementById('labelEmail2');
+const formEmail         = document.getElementById('formEmail');
+const formEmail2        = document.getElementById('formEmail2');
+var emailConfirmed      = false;
+
+if(pagePath == '/signup.html'){
+    formEmail.addEventListener('input', () => {
+        if(formEmail.checkValidity()){
+            formEmail2.disabled = false;
+            formEmailLabel.setAttribute('class', 'formLabel valid');
+        } else {
+            formEmail2.disabled = true;
+            formEmailLabel.setAttribute('class', 'formLabel');
+        }
+        validateEmails();
+    });
+    formEmail2.addEventListener('input', () => {
+        validateEmails();
+    });
+}
+
+const validateEmails = function(){
+    if(formEmail.checkValidity() && 
+    formEmail.value == formEmail2.value){
+        formEmailLabel.setAttribute('class', 'formLabel valid');
+        formEmail2Label.setAttribute('class', 'formLabel valid');
+        emailConfirmed = true;
+    } else {
+        formEmail2Label.setAttribute('class', 'formLabel');
+        emailConfirmed = false;
+    }
+}
+
+const onSubmit = function(){
+    if(emailConfirmed){
+        console.log('Form submitted!')
+        return true;
+    } else {
+        console.log('Form failed to submit.')
+        return false;
+    }
+}
 
 
 console.log(`Hello curious viewer! 
