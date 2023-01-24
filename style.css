@@ -14,7 +14,6 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(var(--charcoal));
     box-sizing: border-box;
 }
 
@@ -99,10 +98,15 @@ p {
 
 .circleBackground {
     border-radius: 50%;
+    padding: 16px;
 }
 
 .whiteText {
     color: rgb(var(--white-smoke));
+}
+
+.darkText {
+    color: rgb(var(--charcoal));
 }
 
 .magentaText {
@@ -127,7 +131,6 @@ a:link:not(.menuBarItem) {
 a:visited:not(.menuBarItem) {
     text-decoration: none;
     color: rgb(var(--deep-purple));
-
 }
 
 a:hover {
@@ -368,7 +371,6 @@ a:active {
 }
 
 .cardIcon {
-    border-radius: 15px;
     padding: 5px;
     height: 120px;
     width: 120px;
@@ -602,31 +604,52 @@ a:active {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: 0 auto;
+
+}
+
+.formBody {
+    background-color: rgb(var(--charcoal));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
 fieldset {
-    background-color: rgb(var(--charcoal));
-    padding: 3%;
+    padding: 1rem 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    grid-template-rows: 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 fieldset div {
-    display: flex;
-    justify-content: flex-start;
-    text-align: right;
-    gap: 1rem;
+}
+
+hr {
+    width: 100%;
+    border-color: rgb(var(--magenta));
 }
 
 .formLabel {
+    display: flex;
+    justify-content: flex-start;
     color: rgb(var(--white-smoke));
     font-size: 1.2rem;
-    width: 8rem;
 }
+
+.formInput {
+    height: 1.5rem;
+}
+
+#formAge {
+    width: 4rem;
+}
+
 
 /* ********** */
 /* FOOTER */
