@@ -1,4 +1,4 @@
-# The Lifting School: Website Template
+# The Lifting School Website
 
 This is an ongoing project that allows me to implement the various skills I am learning in HTML, CSS and JavaScript. 
 The plan is to fully replace my professional website that is currently hosted through Wix, not only saving me money in hosting fees
