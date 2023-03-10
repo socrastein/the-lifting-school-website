@@ -8,4 +8,4 @@ At first, I intend to host a static site through GitHub with form functionality 
 After that, I would like to implement a dynamic website with a backend database, first through [Firebase](https://firebase.google.com/) and then eventually
 through a rented server that hosts backend code I have written myself. 
 
-You can see the latest version at [my live page](https://socrastein.github.io/site-template/).
+You can see the latest version at [my live page](https://socrastein.github.io/the-lifting-school-website/).
