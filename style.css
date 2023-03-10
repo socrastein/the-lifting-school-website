@@ -332,17 +332,6 @@ a:active {
     font-weight: bolder;
 }
 
-#weights {
-    display: block;
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./pics/grip.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-grow: 1;
-    min-height: 400px;
-    min-width: 320px;
-}
-
 /* ********** */
 
 #cardContainer {
@@ -627,7 +616,7 @@ a:active {
 /* ********** */
 
 #signupForm {
-    padding: 2rem 3%;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,8 +637,11 @@ a:active {
     align-items: flex-start;
     gap: 1.5rem;
     padding: 2rem min(3%, 3rem);
-
     max-width: 100%;
+}
+
+fieldset {
+    margin: 0;
 }
 
 legend {
@@ -657,13 +649,18 @@ legend {
     border-color: rgb(var(--white-smoke));
     border-width: 1px;
     padding: 8px;
+    font-weight: bold;
 }
 
 hr {
-    width: 100%;
+    width: 90%;
     border-color: rgb(var(--magenta));
     border-width: 1px;
     box-shadow: 0 0 6px rgb(var(--magenta));
+}
+
+textarea {
+    font-size: 1.2rem;
 }
 
 .formLabel {
@@ -680,7 +677,8 @@ hr {
 .formRow {
     display: flex;
     align-items: center;
-    gap: 4px
+    gap: 4px;
+
 }
 
 .formInput {

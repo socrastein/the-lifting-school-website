@@ -104,6 +104,7 @@
             <select id="formGender" name="Gender" class="formInput" required>
               <option value="male">Male</option>
               <option value="female">Female</option>
+              <option value="nonBinary">Non-Binary</option>
             </select>
           </div>
         
@@ -195,7 +196,7 @@
           <div class="formStacked">
             <label for="formGoal" class="formLabel">
               Primary Goal</label>
-            <select id="formGoal" name="goal" class="formInput" required>
+            <select id="formGoal" name="Primary Goal" class="formInput" required>
               <option value="General Health"> General Health</option>
               <option value="Strength">       Strength</option>
               <option value="Cardio">         Cardio</option>
@@ -207,7 +208,7 @@
           <div class="formStacked">
             <label for="formGoal2" class="formLabel">
               Secondary Goal</label>
-            <select id="formGoal2" name="goal2" class="formInput">
+            <select id="formGoal2" name="Secondary Goal" class="formInput">
               <option value="None">(optional)</option>
               <option value="General Health"> General Health</option>
               <option value="Strength">       Strength</option>
@@ -225,7 +226,7 @@
 
             <div class="formRow">
               <input type="radio" class="formInput"
-              id="formGymYes" name="formGymAccess" value="Yes">
+              id="formGymYes" name="Gym Membership" value="Yes">
               <label for="formGymYes" class="formLabel">
                 Yes
               </label>
@@ -233,7 +234,7 @@
             
             <div class="formRow">
               <input type="radio" class="formInput"
-              id="formGymYes" name="formGymAccess" value="No">
+              id="formGymYes" name="Gym Membership" value="No">
               <label for="formGymNo" class="formLabel">
                 No
               </label>
@@ -250,168 +251,184 @@
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment1" class="formInput" 
-              name="equipment" value="Barbell">
+              name="Available Equipment" value="Barbell">
               <label for="formEquipment1" class="formLabel">
                 Barbell</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment2" class="formInput" 
-              name="equipment" value="Trap Bar">
+              name="Available Equipment" value="Trap Bar">
               <label for="formEquipment2" class="formLabel">
                 Trap Bar</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment3" class="formInput" 
-              name="equipment" value="Dumbbells">
+              name="Available Equipment" value="Dumbbells">
               <label for="formEquipment3" class="formLabel">
                 Dumbbells</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment4" class="formInput" 
-              name="equipment" value="Kettlebells">
+              name="Available Equipment" value="Kettlebells">
               <label for="formEquipment4" class="formLabel">
                 Kettlebells</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment5" class="formInput" 
-              name="equipment" value="Bands">
+              name="Available Equipment" value="Bands">
               <label for="formEquipment5" class="formLabel">
                 Bands</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment6" class="formInput" 
-              name="equipment" value="Pull-Up Bar">
+              name="Available Equipment" value="Pull-Up Bar">
               <label for="formEquipment6" class="formLabel">
                 Pull-Up Bar</label>
             </div>
 
             <div class="formRow">
               <input type="checkbox" id="formEquipment8" class="formInput" 
-              name="equipment" value="Medicine Ball">
+              name="Available Equipment" value="Dip Bar">
               <label for="formEquipment8" class="formLabel">
                 Dip Bar</label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formEquipment7" class="formInput" 
-              name="equipment" value="Rings/TRX">
-              <label for="formEquipment7" class="formLabel">
+              <input type="checkbox" id="formEquipment9" class="formInput" 
+              name="Available Equipment" value="Rings/TRX">
+              <label for="formEquipment9" class="formLabel">
                 Rings/TRX</label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formEquipment8" class="formInput" 
-              name="equipment" value="Medicine Ball">
-              <label for="formEquipment8" class="formLabel">
+              <input type="checkbox" id="formEquipment10" class="formInput" 
+              name="Available Equipment" value="Medicine Ball">
+              <label for="formEquipment10" class="formLabel">
                 Medicine Balls</label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formEquipment8" class="formInput" 
-              name="equipment" value="Medicine Ball">
-              <label for="formEquipment8" class="formLabel">
+              <input type="checkbox" id="formEquipment11" class="formInput" 
+              name="Available Equipment" value="Flat Bench">
+              <label for="formEquipment11" class="formLabel">
                 Flat Bench</label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formEquipment8" class="formInput" 
-              name="equipment" value="Medicine Ball">
-              <label for="formEquipment8" class="formLabel">
+              <input type="checkbox" id="formEquipment12" class="formInput" 
+              name="Available Equipment" value="Incline Bench">
+              <label for="formEquipment12" class="formLabel">
                 Incline Bench</label>
             </div>
             
             <div class="formRow">
-              <input type="checkbox" id="formEquipment8" class="formInput" 
-              name="equipment" value="Medicine Ball">
-              <label for="formEquipment8" class="formLabel">
+              <input type="checkbox" id="formEquipment13" class="formInput" 
+              name="Available Equipment" value="Squat Rack">
+              <label for="formEquipment13" class="formLabel">
                 Squat Rack</label>
               </label>
             </div>
 
-          </fieldset>
-
-          <hr>
-          <!-- 
-            <input type="file" id="formEquipmentPhoto" class="formInput" name="equipmentPhoto"
-            accept="image/*" multiple>
-            <label for="formEquipmentPhoto" class="formLabel">
-              You may attach up to 5 photos of your available equipment. 
-          -->
-
-          <fieldset class="checkboxField formLabel">
-            <legend>Mark any joints you've had pain in the last 3 months</legend>
+            <div class="formRow">
+              <input type="checkbox" id="formEquipment14" class="formInput" 
+              name="Available Equipment" value="Power Rack">
+              <label for="formEquipment14" class="formLabel">
+                Power Rack</label>
+              </label>
+            </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
+              <label for="formEquipment15"></label>
+              <textarea id="formEquipment15" name="Available Equipment: Other" rows="4" 
+              placeholder="List any items not mentioned above"></textarea>
+            </div>
+
+
+          </fieldset>
+
+          <fieldset class="checkboxField formLabel">
+            <legend>Mark any joints you've had pain in recently</legend>
+
+            <div class="formRow">
+              <input type="checkbox" id="formPain1" class="formInput" name="Joint Pain" value="Neck">
               <label class="formLabel" for="formPain1">
                 Neck
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain2" class="formInput" 
+              name="Joint Pain" value="Shoulder">
+              <label class="formLabel" for="formPain2">
                 Shoulder
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain3" class="formInput" 
+              name="Joint Pain" value="Elbow">
+              <label class="formLabel" for="formPain3">
                 Elbow
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain4" class="formInput" 
+              name="Joint Pain" value="Wrist">
+              <label class="formLabel" for="formPain4">
                 Wrist
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain5" class="formInput" 
+              name="Joint Pain" value="Upper Back">
+              <label class="formLabel" for="formPain5">
                 Upper Back
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain6" class="formInput" 
+              name="Joint Pain" value="Lower Back">
+              <label class="formLabel" for="formPain6">
                 Lower Back
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain7" class="formInput" 
+              name="Joint Pain" value="Hip">
+              <label class="formLabel" for="formPain7">
                 Hip
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain8" class="formInput" 
+              name="Joint Pain" value="Knee">
+              <label class="formLabel" for="formPain8">
                 Knee
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain9" class="formInput" 
+              name="Joint Pain" value="Ankle">
+              <label class="formLabel" for="formPain9">
                 Ankle
               </label>
             </div>
 
             <div class="formRow">
-              <input type="checkbox" id="formPain1" class="formInput" name="jointPain" value="">
-              <label class="formLabel" for="formPain1">
+              <input type="checkbox" id="formPain10" class="formInput" 
+              name="Joint Pain" value="Foot">
+              <label class="formLabel" for="formPain10">
                 Foot
               </label>
             </div>

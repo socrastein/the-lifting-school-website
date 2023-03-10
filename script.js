@@ -61,6 +61,8 @@ const openMenuBar = function() {
     menuIcon.removeEventListener("click", openMenuBar);
 }
 
+
+
 window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
 onResize();
@@ -266,8 +268,9 @@ const onSubmit = function(){
 }
 
 
-console.log(`Hello curious viewer! 
+console.log(`Hello! 
 
-If you have any comments about my website design or the code, especially if you notice any bugs or suboptimal design, I'd love to hear from you:
-             
+If you have any comments about my website design or the code, especially if you notice any bugs or suboptimal design, I'd love to hear from you.
+
+    Matt Talley
     info@theliftingschool.com`)
