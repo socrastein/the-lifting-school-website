@@ -64,10 +64,10 @@
         <h4>
           Thank you for your interest! This should only take a few minutes. 
           <br><br>
-          Once submitted, we will email you within the next two business days.
+          Once submitted, I will email you within the next two business days.
         </h4>
         <p class="centerText boldText">
-          (We would never sell your data to anyone)
+          (I would never sell your data to anyone)
         </p>
         <!-- First Name, Last Name -->
         <!-- Age, Gender -->
@@ -107,6 +107,18 @@
               <option value="nonBinary">Non-Binary</option>
             </select>
           </div>
+
+          <div class="formStacked">
+            <label for="formHeight" class="formLabel">
+              Height (inches)</label>
+            <input id="formHeight" type="number" name="Height"  class="formInput" min="48" max="96" required>
+          </div>
+
+          <div class="formStacked">
+            <label for="formWeight" class="formLabel">
+              Weight (pounds)</label>
+            <input id="formWeight" type="number" name="Weight"  class="formInput" min="100" max="500" required>
+          </div>
         
           <hr>
       
@@ -115,7 +127,6 @@
               Phone</label>
             <input id="formPhone" type="text" name="Phone" 
             class="formInput" placeholder="208-555-5555" required>
-            <span class="whiteText smallText">(we won't call or spam text)</span>
           </div>
           <div class="formStacked">
             <label for="formEmail" class="formLabel" id="labelEmail">
@@ -225,7 +236,7 @@
             </label>
 
             <div class="formRow">
-              <input type="radio" class="formInput"
+              <input type="radio" class="formInput" required
               id="formGymYes" name="Gym Membership" value="Yes">
               <label for="formGymYes" class="formLabel">
                 Yes
@@ -233,13 +244,42 @@
             </div>
             
             <div class="formRow">
-              <input type="radio" class="formInput"
+              <input type="radio" class="formInput" required
               id="formGymYes" name="Gym Membership" value="No">
               <label for="formGymNo" class="formLabel">
                 No
               </label>
             </div>
-            
+          </div>
+
+          <div class="formStacked">
+            <label for="formFrequency" class="formLabel">
+              How often would you like to workout?</label>
+
+            <select id="formFrequency" name="Preferred Frequency" class="formInput">
+              <option value="1x/wk">    1x / week</option>
+              <option value="2x/wk">    2x / week</option>
+              <option value="3x/wk" selected="selected">
+                                        3x / week</option>
+              <option value="4x/wk">    4x / week</option>
+              <option value="5x/wk">    5x / week</option>
+              <option value="6x/wk">    6x / week</option>
+            </select>
+          </div>
+
+          <div class="formStacked">
+            <label for="formSessionLength" class="formLabel">
+              How long would you like your workouts to be?</label>
+
+            <select id="formSessionLength" name="Preferred Session Length" class="formInput">
+              <option value="30 min">   30 min</option>
+              <option value="45 min">   45 min</option>
+              <option value="60 min" selected="selected">         
+                                        60 min</option>
+              <option value="75 min">   75 min</option>
+              <option value="90 min">   90 min</option>
+              <option value="2 hours">  2 hours</option>
+            </select>
           </div>
 
           <hr>
@@ -348,8 +388,9 @@
               placeholder="List any items not mentioned above"></textarea>
             </div>
 
-
           </fieldset>
+
+          <hr>
 
           <fieldset class="checkboxField formLabel">
             <legend>Mark any joints you've had pain in recently</legend>
