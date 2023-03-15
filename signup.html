@@ -55,7 +55,7 @@
     <!-- MAIN BODY -->
     <div id="mainContainer">
 
-      <form id="signupForm" name="Sign Up Form" onsubmit="onSubmit()"
+      <form id="signupForm" name="Sign Up Form" onsubmit="return onSubmit(event)"
       action="https://formspree.io/f/xzbqzwkv" method="POST">
         <div class="darkBackground circleBackground">
           <img class="cardIcon" src="./icons/form.svg">
@@ -478,7 +478,8 @@
 
           <br>
           <div class="centered">
-            <button class="signUpButton" type="submit">SUBMIT</button>
+            <button class="signUpButton" type="submit"
+            onClick="return onSubmit()">SUBMIT</button>
           </div>
 
         </div>
