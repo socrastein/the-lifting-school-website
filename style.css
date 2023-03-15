@@ -292,11 +292,18 @@ a:active {
 }
 
 .pageTop {
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./pics/grip.jpg);
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homeImage {
+    background-image: 
+    linear-gradient(
+        rgba(0,0,0,.4), 
+        rgba(0,0,0,.4)), 
+        url(./pics/grip.jpg);
     background-position: center;
-    height: fit-content;
 }
 
 .pageIntro {
@@ -356,7 +363,7 @@ a:active {
 }
 
 .card {
-    flex: 1;
+    width: 290px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -388,6 +395,9 @@ a:active {
 }
 
 .cardIcon {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
     padding: 5px;
     height: 120px;
     width: 120px;
@@ -438,14 +448,13 @@ a:active {
 .checkBlock {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-evenly;
 }
 
 .checkListItem {
     display: flex;
     align-items: center;
-    height: 3rem;
     gap: 8px;
 }
 
