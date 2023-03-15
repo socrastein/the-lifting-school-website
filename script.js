@@ -1,3 +1,7 @@
+///////////////////////////
+// NAV BAR SCRIPTING /////
+/////////////////////////
+
 var pagePath = window.location.pathname;
 
 const menuBar = document.getElementById("menuBar");
@@ -304,6 +308,14 @@ const onSubmit = function (event) {
     return false;
   }
 };
+
+//////////////////////////
+// BLOG PAGE SCRIPTING //
+////////////////////////
+
+
+
+///////////////////
 
 console.log(`Hello! 
 
