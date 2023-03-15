@@ -17,10 +17,10 @@
     box-sizing: border-box;
 }
 
-::selection {
+/* ::selection {
     background: rgb(var(--charcoal));
     color: rgb(var(--white-smoke));
-}
+} */
 
 @keyframes rotation {
     from {
@@ -126,12 +126,22 @@ p {
     font-weight: bold;
 }
 
+.italicText {
+    font-style: italic;
+}
+
 .smallText {
     font-size: .9rem;
 }
 
 .centerText {
     text-align: center;
+    
+}
+
+.openText {
+    max-width: 800px;
+    padding: 0 3%;
 }
 
 .flexColumn {
