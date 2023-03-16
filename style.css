@@ -136,7 +136,6 @@ p {
 
 .centerText {
     text-align: center;
-    
 }
 
 .openText {
@@ -380,13 +379,15 @@ a:active {
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-    box-shadow: 3px 3px 3px rgb(var(--charcoal));
+    box-shadow: 2px 2px 3px rgb(var(--charcoal));
     border-color: rgb(var(--charcoal));
     border-style: solid;
+    border-radius: 12px;
     border-width: 1px;
 }
 
 .cardTop, .cardBottom {
+    border-radius: 8px 8px 0 0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -400,6 +401,7 @@ a:active {
     height: 12rem;
     background-color: rgb(var(--charcoal));
     background-size: cover;
+    
 }
 
 .cardBottom h4 {
@@ -732,8 +734,94 @@ textarea {
  /* BLOG */
 /* **** */
 
+#blogContainer {
+    min-height: 500px;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+article {
+    padding-top: 2rem;
+    min-height: 500px;
+    margin: 1rem auto;
+    max-width: min(740px, 90%);
+    gap: 1.5rem;
+}
+
+.blogAuthor {
+    align-items: center;
+    gap: 1rem;
+}
+
+.blogAuthorPic {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+article h1 {
+    text-align: left;
+}
+
+article img {
+    border-radius: 16px;
+}
+
+ul {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+li {
+    margin: .75rem;
+}
+
+
+.picCaption {
+    font-size: .9rem;
+    text-align: center;
+    margin-top: -8px;
+}
+
 .blogCard {
-    
+    margin: 1rem auto;
+    max-width: min(740px, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    border-style: solid;
+    border-color: rgb(var(--charcoal));
+    border-width: 1px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 3px rgb(var(--charcoal));
+    padding-bottom: 1.5rem;
+    transition: .25s;
+}
+
+.blogCard:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .25s ease;
+}
+
+.blogCardImage {
+    border-radius: 14px 14px 0 0;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogCardReadTime {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.blogCardTitle, .blogCardDescription {
+    padding: 0 1rem;
 }
 
   /* ****** */
