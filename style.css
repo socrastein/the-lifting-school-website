@@ -762,12 +762,33 @@ article {
     border-radius: 50%;
 }
 
-article h1 {
+article h1, article h2 {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+article h3, article h4, article h5 {
     text-align: left;
 }
 
 article img {
     border-radius: 16px;
+}
+
+.leftBorderList {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 1rem 2rem;
+    gap: 1.5rem;
+    font-style: italic;
+    border-left: solid rgb(var(--magenta)) 3px;
+}
+
+.leftBorderList h3 {
+    display: flex;
+    align-items: center;
 }
 
 ul {
