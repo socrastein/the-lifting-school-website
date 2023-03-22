@@ -32,6 +32,16 @@
     }
 }
 
+@keyframes rotation90 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -843,6 +853,26 @@ li {
 
 .blogCardTitle, .blogCardDescription {
     padding: 0 1rem;
+}
+
+.expandingTextContainer {
+    padding: 1rem;
+}
+
+.expandingTextHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expandingTextIcon {
+    height: 2rem;
+    width: 2rem;
+    transition: transform .5s ease;
+}
+
+.expandingTextBody {
+    padding: 1rem 0 1rem 3rem;
 }
 
   /* ****** */

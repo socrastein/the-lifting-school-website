@@ -313,7 +313,35 @@ const onSubmit = function (event) {
 // BLOG PAGE SCRIPTING //
 ////////////////////////
 
+const closeExpandingText = (element) => {
+  element.target.style.transform = "rotate(0deg)";
+  element.target.removeEventListener("click", closeExpandingText);
+  element.target.addEventListener("click", openExpandingText);
 
+  let hiddenText = element.target.parentNode.nextElementSibling;
+  hiddenText.classList.add("hidden");
+}
+
+const openExpandingText = (element) => {
+  element.target.style.transform = "rotate(90deg)";
+  element.target.removeEventListener("click", openExpandingText);
+  element.target.addEventListener("click", closeExpandingText);
+
+  let hiddenText = element.target.parentNode.nextElementSibling;
+  hiddenText.classList.remove("hidden");
+};
+
+// EXPANDING TEXT CONTAINERS
+
+let expandingTextIcons = document.querySelectorAll(".expandingTextIcon");
+
+if (expandingTextIcons) {
+  console.log(expandingTextIcons);
+  for (let i = 0; i < expandingTextIcons.length; i++) {
+    console.log(expandingTextIcons[i]);
+    expandingTextIcons[i].addEventListener("click", openExpandingText);
+  }
+}
 
 ///////////////////
 
