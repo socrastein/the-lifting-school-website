@@ -42,7 +42,7 @@ const closeMenuBar = function () {
   menuBar.style.width = "";
   menuBar.style.padding = "0";
   menuBar.style.paddingLeft = "24px";
-  menuIcon.setAttribute("src", "./icons/menu.svg");
+  menuIcon.setAttribute("src", "../icons/menu.svg");
   menuIcon.addEventListener("click", openMenuBar);
   menuIcon.removeEventListener("click", closeMenuBar);
 };
@@ -58,7 +58,7 @@ const openMenuBar = function () {
   menuBar.style.width = "100vw";
   menuBar.style.padding = "3rem";
   menuIcon.style.zIndex = "5";
-  menuIcon.setAttribute("src", "./icons/close.svg");
+  menuIcon.setAttribute("src", "../icons/close.svg");
   menuIcon.addEventListener("click", closeMenuBar);
   menuIcon.removeEventListener("click", openMenuBar);
 };
