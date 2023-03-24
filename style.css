@@ -748,7 +748,7 @@ hr {
     width: 90%;
     border-color: rgb(var(--magenta));
     border-width: 1px;
-    box-shadow: 0 0 6px rgb(var(--magenta));
+    box-shadow: 0 1px 2px rgb(var(--magenta));
 }
 
 textarea {
@@ -819,7 +819,7 @@ textarea {
 article {
     padding-top: 2rem;
     min-height: 500px;
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: min(740px, 90%);
     gap: 1.5rem;
 }
@@ -839,7 +839,7 @@ article {
     cursor: pointer;
 }
 
-article h1, article h2 {
+article h2 {
     text-align: left;
     margin-top: 1.5rem;
 }
