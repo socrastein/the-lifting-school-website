@@ -108,7 +108,7 @@ const scrollFunction = () => {
     scrollToTopButton.classList.remove("fadeOut");
     scrollToTopButton.classList.add("fadeIn");
     scrollToTopButton.disabled = false;
-    if (!(menuBar.style.display === "none")) {
+    if (menuBar.style.flexDirection === "column") {
       closeMenuBar();
     }
   } else {
