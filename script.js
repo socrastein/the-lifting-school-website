@@ -1,8 +1,12 @@
-///////////////////////////
-// NAV BAR SCRIPTING /////
-/////////////////////////
+/////////////////
+// NAV BAR /////
+///////////////
 
 var pagePath = window.location.pathname;
+let homePath;
+if(pagePath.includes("blog")){
+  homePath = "..";
+} else homePath = ".";
 
 const menuBar = document.getElementById("menuBar");
 const menuIcon = document.getElementById("menuIcon");
@@ -42,9 +46,10 @@ const closeMenuBar = function () {
   menuBar.style.width = "";
   menuBar.style.padding = "0";
   menuBar.style.paddingLeft = "24px";
-  menuIcon.setAttribute("src", "../icons/menu.svg");
+  menuIcon.setAttribute("src", `${homePath}/icons/menu.svg`);
   menuIcon.addEventListener("click", openMenuBar);
   menuIcon.removeEventListener("click", closeMenuBar);
+  document.removeEventListener("click", outsideClickListener);
 };
 
 const openMenuBar = function () {
@@ -58,37 +63,54 @@ const openMenuBar = function () {
   menuBar.style.width = "100vw";
   menuBar.style.padding = "3rem";
   menuIcon.style.zIndex = "5";
-  menuIcon.setAttribute("src", "../icons/close.svg");
+  menuIcon.setAttribute("src", `${homePath}/icons/close.svg`);
   menuIcon.addEventListener("click", closeMenuBar);
   menuIcon.removeEventListener("click", openMenuBar);
+  document.addEventListener("click", outsideClickListener);
+};
+
+const outsideClickListener = (event) => {
+  if (event.target.id == "menuIcon") {
+    return;
+  }
+  if (
+    !menuBar.contains(event.target) &&
+    event.target.closest("#menuBar") === null
+  ) {
+    closeMenuBar();
+  }
 };
 
 window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
 onResize();
 
-/////////////////////////////////
-// SCROLL-TO-TOP SCRIPTING /////
-///////////////////////////////
+///////////////////////
+// SCROLL-TO-TOP /////
+/////////////////////
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 const scrollToTopButton = document.getElementById("scrollToTopButton");
+const screenHeightScrollDistance = screen.height * 2;
 window.onscroll = function () {
   scrollFunction();
 };
 
 const scrollFunction = () => {
   if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
+    document.body.scrollTop > screenHeightScrollDistance ||
+    document.documentElement.scrollTop > screenHeightScrollDistance
   ) {
     scrollToTopButton.classList.remove("hidden");
     scrollToTopButton.classList.remove("fadeOut");
     scrollToTopButton.classList.add("fadeIn");
     scrollToTopButton.disabled = false;
+    if (!(menuBar.style.display === "none")) {
+      closeMenuBar();
+    }
   } else {
     scrollToTopButton.classList.remove("fadeIn");
     scrollToTopButton.classList.add("fadeOut");
@@ -96,9 +118,9 @@ const scrollFunction = () => {
   }
 };
 
-/////////////////////////////
-// HOME PAGE SCRIPTING /////
-///////////////////////////
+///////////////////
+// HOME PAGE /////
+/////////////////
 
 const testimonials = document.getElementById("testimonials");
 const slideNumber = document.getElementById("slideNumber");
@@ -349,7 +371,7 @@ const closeExpandingText = (element) => {
 
   let hiddenText = element.target.parentNode.nextElementSibling;
   hiddenText.classList.add("hidden");
-}
+};
 
 const openExpandingText = (element) => {
   element.target.style.transform = "rotate(90deg)";
