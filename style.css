@@ -52,8 +52,24 @@
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 .fadeIn {
     animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeOut {
+    animation-name: fadeOut;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -214,6 +230,23 @@ a:active {
     transition: .25s;
 }
 
+#scrollToTopButton {
+    width: 15vw;
+    aspect-ratio: 1;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+
+    background-color: rgba(255,255,255,.5);
+    background-image: url(./icons/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+
+    border-style: none;
+    border-radius: 50%;
+}
+
 /* ********** */
 /* HEADER */
 /* ********** */
@@ -226,6 +259,7 @@ a:active {
     align-items: flex-end;
     padding: max(1%, 8px) 3%;
     background-color: rgb(var(--charcoal));
+    box-shadow: 0 1px 12px rgba(0,0,0,.6);
 }
 
 .headerText {
