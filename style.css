@@ -247,6 +247,10 @@ a:active {
     border-radius: 50%;
 }
 
+#scrollToTopButton:hover:not(.fadeOut) {
+    cursor: pointer;
+}
+
 /* ********** */
 /* HEADER */
 /* ********** */
