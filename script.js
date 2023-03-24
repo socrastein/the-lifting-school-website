@@ -67,6 +67,35 @@ window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
 onResize();
 
+/////////////////////////////////
+// SCROLL-TO-TOP SCRIPTING /////
+///////////////////////////////
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+const scrollFunction = () => {
+  if (
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
+  ) {
+    scrollToTopButton.classList.remove("hidden");
+    scrollToTopButton.classList.remove("fadeOut");
+    scrollToTopButton.classList.add("fadeIn");
+    scrollToTopButton.disabled = false;
+  } else {
+    scrollToTopButton.classList.remove("fadeIn");
+    scrollToTopButton.classList.add("fadeOut");
+    scrollToTopButton.disabled = true;
+  }
+};
+
 /////////////////////////////
 // HOME PAGE SCRIPTING /////
 ///////////////////////////
