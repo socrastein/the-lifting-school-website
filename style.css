@@ -562,6 +562,7 @@ a:active {
 
 #mattPic:hover {
     background-image: url(./pics/matt-weights.jpg);
+    cursor: pointer;
 }
 
 #bioText {
@@ -573,6 +574,11 @@ a:active {
 #bioSig {
     font-size: 1.8rem;
     font-weight: 700;
+    width: fit-content;
+}
+
+#bioSig:hover {
+    cursor: pointer;
 }
 
 /* ********** */
@@ -811,6 +817,10 @@ article {
     height: 48px;
     width: 48px;
     border-radius: 50%;
+}
+
+.blogAuthorPic:hover {
+    cursor: pointer;
 }
 
 article h1, article h2 {
