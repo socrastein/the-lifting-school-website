@@ -231,11 +231,11 @@ a:active {
 }
 
 #scrollToTopButton {
-    width: 15vw;
+    width: min(15vw, 60px);
     aspect-ratio: 1;
     position: fixed;
-    bottom: 50px;
-    right: 10px;
+    bottom: 2vh;
+    right: 3vw;
 
     background-color: rgba(255,255,255,.5);
     background-image: url(./icons/arrow.svg);
