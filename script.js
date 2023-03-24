@@ -309,9 +309,9 @@ function handleTouchMove(event) {
   yDown = null;
 }
 
-/////////////////////////////
-// SIGN UP PAGE SCRIPTING //
-///////////////////////////
+///////////////////
+// SIGN UP PAGE //
+/////////////////
 
 const formEmailLabel = document.getElementById("labelEmail");
 const formEmail2Label = document.getElementById("labelEmail2");
@@ -360,9 +360,9 @@ const onSubmit = function (event) {
   }
 };
 
-//////////////////////////
-// BLOG PAGE SCRIPTING //
-////////////////////////
+////////////////
+// BLOG PAGE //
+//////////////
 
 const closeExpandingText = (element) => {
   element.target.style.transform = "rotate(0deg)";
