@@ -4,7 +4,7 @@
 
 var pagePath = window.location.pathname;
 let homePath;
-if(pagePath.includes("blog")){
+if (pagePath.includes("blog")) {
   homePath = "..";
 } else homePath = ".";
 
