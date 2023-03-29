@@ -814,6 +814,8 @@ textarea {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 5rem;
+    margin: 0 auto;
+    max-width: min(740px, 90%);
 }
 
 article {
@@ -837,6 +839,24 @@ article {
 
 .blogAuthorPic:hover {
     cursor: pointer;
+}
+
+#blogTitleContainer {
+    width: min(740px, 100%);
+    padding: 1rem;
+    transform: skewY(-2deg);
+    background-color: rgb(var(--charcoal));
+    box-shadow: 0 0 4px rgb(var(--charcoal)),
+    0px 4px 2px rgb(var(--deep-purple));
+    margin-bottom: 2rem;
+    border-radius: 10px 10px 20px 10px;
+}
+
+#blogTitle {
+    
+    color: rgb(var(--magenta));
+    filter: brightness(1.4);
+    background-color: transparent;
 }
 
 article h2 {
