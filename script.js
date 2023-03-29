@@ -4,9 +4,11 @@
 
 var pagePath = window.location.pathname;
 let homePath;
-if (pagePath.includes("blog")) {
+if (pagePath.includes("blog/")) {
   homePath = "..";
 } else homePath = ".";
+
+
 
 const menuBar = document.getElementById("menuBar");
 const menuIcon = document.getElementById("menuIcon");
@@ -23,6 +25,7 @@ const onResize = function () {
     bizLogo.style.height = "30px";
     bizLogo.style.width = "30px";
     menuBar.style.display = "none";
+    menuBar.style.borderRadius = "0 0 12px 12px";
     menuIcon.style.display = "flex";
     tagLine.style.fontSize = ".8rem";
   } else {
@@ -30,6 +33,7 @@ const onResize = function () {
     bizLogo.style.height = "50px";
     bizLogo.style.width = "50px";
     menuBar.style.display = "flex";
+    menuBar.style.borderRadius = "0";
     menuIcon.style.display = "none";
     tagLine.style.fontSize = "1rem";
   }
