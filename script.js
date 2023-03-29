@@ -2,13 +2,11 @@
 // NAV BAR /////
 ///////////////
 
-var pagePath = window.location.pathname;
+let pagePath = window.location.pathname;
 let homePath;
 if (pagePath.includes("blog/")) {
   homePath = "..";
 } else homePath = ".";
-
-
 
 const menuBar = document.getElementById("menuBar");
 const menuIcon = document.getElementById("menuIcon");
@@ -16,7 +14,7 @@ const bizLogo = document.getElementById("bizLogo");
 const bizName = document.getElementById("bizName");
 const tagLine = document.getElementById("tagLine");
 
-var screenWidth = window.screen.width;
+let screenWidth = window.screen.width;
 
 const onResize = function () {
   screenWidth = window.screen.width;
@@ -26,6 +24,7 @@ const onResize = function () {
     bizLogo.style.width = "30px";
     menuBar.style.display = "none";
     menuBar.style.borderRadius = "0 0 12px 12px";
+    menuBar.style.boxShadow = "0 2px 4px rgb(var(--white-smoke))";
     menuIcon.style.display = "flex";
     tagLine.style.fontSize = ".8rem";
   } else {
@@ -34,6 +33,7 @@ const onResize = function () {
     bizLogo.style.width = "50px";
     menuBar.style.display = "flex";
     menuBar.style.borderRadius = "0";
+    menuBar.style.boxShadow = "none";
     menuIcon.style.display = "none";
     tagLine.style.fontSize = "1rem";
   }
@@ -132,7 +132,7 @@ const slideText = document.getElementById("slideText");
 const clientPhoto = document.getElementById("clientPhoto");
 const clientName = document.getElementById("clientName");
 const clientText = document.getElementById("clientTestimonial");
-var currentSlide = 0;
+let currentSlide = Math.floor(Math.random() * 20);
 
 const clients = [
   {
@@ -269,8 +269,8 @@ if (pagePath == "/index.html") {
   testimonials.addEventListener("touchmove", handleTouchMove, false);
 }
 
-var xDown = null;
-var yDown = null;
+let xDown = null;
+let yDown = null;
 
 function getTouches(event) {
   return event.touches;
@@ -287,11 +287,11 @@ function handleTouchMove(event) {
     return;
   }
 
-  var xUp = event.touches[0].clientX;
-  var yUp = event.touches[0].clientY;
+  let xUp = event.touches[0].clientX;
+  let yUp = event.touches[0].clientY;
 
-  var xDiff = xDown - xUp;
-  var yDiff = yDown - yUp;
+  let xDiff = xDown - xUp;
+  let yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
     if (xDiff > 0) {
@@ -399,6 +399,13 @@ if (expandingTextIcons) {
 }
 
 ///////////////////
+
+// Initial function calls 
+
+// Updates slide to randomly selected currentSlide 
+if(clientPhoto){
+  updateSlide();
+}
 
 console.log(`Hello! 
 
