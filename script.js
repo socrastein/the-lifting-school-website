@@ -253,7 +253,7 @@ const updateSlide = () => {
       clientPhoto.className = "slidePic fadeIn";
       clientPhoto.style.backgroundImage = `url(${clients[currentSlide].photo})`;
       clientName.innerHTML = clients[currentSlide].name;
-      clientText.innerHTML = clients[currentSlide].testimony;git 
+      clientText.innerHTML = clients[currentSlide].testimony;
       slideNumber.innerHTML = `${currentSlide + 1}/19`;
     });
   });
