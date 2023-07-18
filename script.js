@@ -221,11 +221,6 @@ const clients = [
     testimony: `I never got bored. In fact, I actually became addicted to exercising. Matt encouraged me to trust myself and push harder.`,
   },
   {
-    name: "Derek L.",
-    photo: "./testimonials/derek.jpg",
-    testimony: `Transcendence of the mind occurs through Matt's regular motivational insights into life and his passion for sharing philosophic explanations.`,
-  },
-  {
     name: "Venu K.",
     photo: "./testimonials/venu.jpg",
     testimony: `Matt is the “injury specialist”. My earlier trainer had no inkling of what the reasons for my pain were, so we would ignore then aggravate it.`,
@@ -238,7 +233,7 @@ const clients = [
 ];
 
 const nextSlide = () => {
-  if (currentSlide == 19) {
+  if (currentSlide == 18) {
     currentSlide = 0;
   } else currentSlide += 1;
   updateSlide();
@@ -246,7 +241,7 @@ const nextSlide = () => {
 
 const previousSlide = () => {
   if (currentSlide == 0) {
-    currentSlide = 19;
+    currentSlide = 18;
   } else currentSlide -= 1;
   updateSlide();
 };
@@ -259,7 +254,7 @@ const updateSlide = () => {
       clientPhoto.style.backgroundImage = `url(${clients[currentSlide].photo})`;
       clientName.innerHTML = clients[currentSlide].name;
       clientText.innerHTML = clients[currentSlide].testimony;
-      slideNumber.innerHTML = `${currentSlide + 1}/20`;
+      slideNumber.innerHTML = `${currentSlide + 1}/19`;
     });
   });
 };
