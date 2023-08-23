@@ -386,9 +386,7 @@ const openExpandingText = (element) => {
 let expandingTextIcons = document.querySelectorAll(".expandingTextIcon");
 
 if (expandingTextIcons) {
-  console.log(expandingTextIcons);
   for (let i = 0; i < expandingTextIcons.length; i++) {
-    console.log(expandingTextIcons[i]);
     expandingTextIcons[i].addEventListener("click", openExpandingText);
   }
 }
