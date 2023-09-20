@@ -109,6 +109,15 @@ h5 {
     font-size: 1.3rem;
 }
 
+ul, ol {
+    font-size: 1.2rem;
+    margin: -.75rem 0 .75rem 0;
+}
+
+li {
+    margin: .25rem 0 0 .5rem;
+}
+
 p {
     margin: 0;
     font-size: 1.2rem;
@@ -888,16 +897,6 @@ article img {
     display: flex;
     align-items: center;
 }
-
-ul, ol {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-li {
-    margin: 1rem;
-}
-
 
 .picCaption {
     font-size: .9rem;
