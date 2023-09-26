@@ -2,7 +2,7 @@
 
     /* RGB Codes for Custom Colors */
     --white-smoke:      243, 243, 243;
-    --charcoal:         51, 51, 51;
+    --charcoal:         45, 45, 45;
     --magenta:          144, 0, 144;
     --deep-purple:      67, 0, 101;
     --green:            0, 144, 0;
@@ -82,9 +82,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgb(var(--white-smoke));
+    color: rgb(var(--charcoal));
 }
 
 h1, h2, h3, h4, h5 {
+    color: rgb(var(--charcoal));
     margin: 0;
     text-align: center;
 }
@@ -145,6 +147,19 @@ p {
     color: rgb(var(--charcoal));
 }
 
+.purpleText {
+    /* Use on white background */
+    color: rgb(var(--deep-purple));
+    font-family: inherit;
+}
+
+.purpleTextBright {
+    /* Use on dark background */
+    color: rgb(var(--deep-purple));
+    font-family: inherit;
+    filter: brightness(1.3);
+}
+
 .magentaText {
     /* Use on white background */
     color: rgb(var(--magenta));
@@ -155,7 +170,7 @@ p {
     /* Use on dark background */
     color: rgb(var(--magenta));
     font-family: inherit;
-    filter: brightness(1.4);
+    filter: brightness(1.3);
 }
 
 .boldText {
@@ -854,12 +869,16 @@ article {
 #blogTitleContainer {
     width: min(740px, 100%);
     padding: 1rem;
-    transform: skewY(-2deg);
+    transform: skewY(-1deg);
     background-color: rgb(var(--charcoal));
-    box-shadow: 0 0 4px rgb(var(--charcoal)),
-    0px 4px 2px rgb(var(--deep-purple));
     margin-bottom: 2rem;
+    
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(var(--white-smoke));
     border-radius: 10px 10px 20px 10px;
+    
+    box-shadow: 1px 4px 12px rgb(var(--deep-purple));
 }
 
 #blogTitle {
