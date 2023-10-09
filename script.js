@@ -127,7 +127,6 @@ const scrollFunction = () => {
 /////////////////
 
 const testimonials = document.getElementById("testimonials");
-const slideNumber = document.getElementById("slideNumber");
 const slideText = document.getElementById("slideText");
 const clientPhoto = document.getElementById("clientPhoto");
 const clientName = document.getElementById("clientName");
@@ -254,7 +253,6 @@ const updateSlide = () => {
       clientPhoto.style.backgroundImage = `url(${clients[currentSlide].photo})`;
       clientName.innerHTML = clients[currentSlide].name;
       clientText.innerHTML = clients[currentSlide].testimony;
-      slideNumber.innerHTML = `${currentSlide + 1}/19`;
     });
   });
 };
