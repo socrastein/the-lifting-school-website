@@ -976,6 +976,7 @@ article img {
 }
 
 .blogCardTitle, .blogCardDescription {
+    text-align: center;
     padding: 0 1rem;
 }
 
