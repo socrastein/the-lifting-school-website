@@ -391,10 +391,10 @@ if (expandingTextIcons) {
 
 ///////////////////
 
-// Initial function calls 
+// Initial function calls
 
-// Updates slide to randomly selected currentSlide 
-if(clientPhoto){
+// Updates slide to randomly selected currentSlide
+if (clientPhoto) {
   updateSlide();
 }
 

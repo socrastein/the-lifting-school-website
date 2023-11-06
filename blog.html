@@ -1,182 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Matt Talley">
-    <meta name="referrer" content="origin">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matt Talley" />
+    <meta name="referrer" content="origin" />
+
     <title>The Lifting School | Blog</title>
-    <meta name="description" content="Writing on topics like exercise science, proper lifting form, nutrition, etc.">
-    <link rel="icon" type="image/x-icon" href="./pics/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Writing on topics like exercise science, proper lifting form, nutrition, etc."
+    />
+    <link rel="icon" type="image/x-icon" href="./pics/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
-
-    <div id="header"> 
-        <div id="siteID">
-
-            <div id="siteName">
-                <img src="./icons/logo.svg" id="bizLogo"
-                alt="Penrose triangle with white, neon-purple and charcoal-grey sides">
-                <a href="./">
-                    <h2 id="bizName" class="headerText">
-                    The Lifting School
-                    </h2>
-                </a>
-
-            </div>
-
-            <p id="tagLine" class="headerText">
-            Training and education for sensible lifters
-            </p>
-
+  <body>
+    <div id="header">
+      <div id="siteID">
+        <div id="siteName">
+          <img
+            src="./icons/logo.svg"
+            id="bizLogo"
+            alt="Penrose triangle with white, neon-purple and charcoal-grey sides"
+          />
+          <a href="./">
+            <h2 id="bizName" class="headerText">The Lifting School</h2>
+          </a>
         </div>
 
-        <!-- <div id="searchBar"></div> -->
-        <!-- <div id="colorMode"></div> -->
-        
-        <input type="image" src="./icons/menu.svg" class="hidden" id="menuIcon">
-
-        <div id="menuBar">
-            <a href="./" class="headerText menuBarItem">
-            Home</a>
-            <a href="blog.html" class="headerText menuBarItem currentPage">
-            Blog</a>
-            <a href="services.html" class="headerText menuBarItem">
-            Services</a>
-            <a href="about.html" class="headerText menuBarItem">
-            About</a>
-        </div>
-    </div>
-
-
-
-    <div id="blogContainer">
-
-        <div id="blogTitleContainer">
-            <h1 id="blogTitle">Blog Posts</h1>
-        </div>
-
-        <div class="blogCard" onclick="location.href='./blog/training-for-sport.html'">
-            <div class="blogCardImage"
-            style="background-image: url(./blog/blog-pix/boxing-gloves.jpg)">
-            </div>
-            <h3 class="blogCardTitle">
-                Training for Sport
-            </h3>
-            <p class="blogCardReadTime">
-                20 min
-            </p>
-            <p class="blogCardDescription">
-                Lifting and cardio can make you a better athlete, but you need to be careful how you structure your program so you can make progress without burning out.
-            </p>
-        </div>
-
-              <!-- Tips For Better Sleep -->
-      <div class="blogCard" onclick="location.href='./blog/sleeping-tips.html'">
-        <div class="blogCardImage"
-        style="background-image: url(./blog/blog-pix/sleepy-sam.jpg)">
-        </div>
-        <h3 class="blogCardTitle">
-            Six Tips For Better Sleep
-        </h3>
-        <p class="blogCardReadTime">
-            9 min
-        </p>
-        <p class="blogCardDescription">
-            We've all been warned about using caffeine too late or staring at our screens at night, but here are some useful tips you may have overlooked.
+        <p id="tagLine" class="headerText">
+          Training and education for sensible lifters
         </p>
       </div>
-        
+
+      <!-- <div id="searchBar"></div> -->
+      <!-- <div id="colorMode"></div> -->
+
+      <input type="image" src="./icons/menu.svg" class="hidden" id="menuIcon" />
+
+      <div id="menuBar">
+        <a href="./" class="headerText menuBarItem"> Home</a>
+        <a href="blog.html" class="headerText menuBarItem currentPage"> Blog</a>
+        <a href="services.html" class="headerText menuBarItem"> Services</a>
+        <a href="about.html" class="headerText menuBarItem"> About</a>
+      </div>
+    </div>
+
+    <div id="blogContainer">
+      <div id="blogTitleContainer">
+        <h1 id="blogTitle">Blog Posts</h1>
+      </div>
+
+      <div
+        class="blogCard"
+        onclick="location.href='./blog/training-for-sport.html'"
+      >
+        <div
+          class="blogCardImage"
+          style="background-image: url(./blog/blog-pix/boxing-gloves.jpg)"
+        ></div>
+        <h3 class="blogCardTitle">Training for Sport</h3>
+        <p class="blogCardReadTime">20 min</p>
+        <p class="blogCardDescription">
+          Lifting and cardio can make you a better athlete, but you need to be
+          careful how you structure your program so you can make progress
+          without burning out.
+        </p>
+      </div>
+
+      <!-- Tips For Better Sleep -->
+      <div class="blogCard" onclick="location.href='./blog/sleeping-tips.html'">
+        <div
+          class="blogCardImage"
+          style="background-image: url(./blog/blog-pix/sleepy-sam.jpg)"
+        ></div>
+        <h3 class="blogCardTitle">Six Tips For Better Sleep</h3>
+        <p class="blogCardReadTime">9 min</p>
+        <p class="blogCardDescription">
+          We've all been warned about using caffeine too late or staring at our
+          screens at night, but here are some useful tips you may have
+          overlooked.
+        </p>
+      </div>
 
       <!-- How to Build a Home Cable Pulley System -->
-      <div class="blogCard" onclick="location.href='./blog/build-a-pulley.html'">
-        <div class="blogCardImage"
-        style="background-image: url(./blog/blog-pix/prices.jpg)">
-        </div>
-        <h3 class="blogCardTitle">
-            How to Build a Home Cable Pulley System
-        </h3>
-        <p class="blogCardReadTime">
-            3 min
-        </p>
+      <div
+        class="blogCard"
+        onclick="location.href='./blog/build-a-pulley.html'"
+      >
+        <div
+          class="blogCardImage"
+          style="background-image: url(./blog/blog-pix/prices.jpg)"
+        ></div>
+        <h3 class="blogCardTitle">How to Build a Home Cable Pulley System</h3>
+        <p class="blogCardReadTime">3 min</p>
         <p class="blogCardDescription">
-            It costs less than $50 to put together a quality pulley system at home that you can expand on over time. Here's how.
+          It costs less than $50 to put together a quality pulley system at home
+          that you can expand on over time. Here's how.
         </p>
       </div>
 
       <!-- Jump For Joy -->
       <div class="blogCard" onclick="location.href='./blog/jump-for-joy.html'">
-        <div class="blogCardImage"
-        style="background-image: url(./blog/blog-pix/jump-cover.jpg)">
-        </div>
-        <h3 class="blogCardTitle">
-            Jump For Joy
-        </h3>
-        <p class="blogCardReadTime">
-            10 min
-        </p>
+        <div
+          class="blogCardImage"
+          style="background-image: url(./blog/blog-pix/jump-cover.jpg)"
+        ></div>
+        <h3 class="blogCardTitle">Jump For Joy</h3>
+        <p class="blogCardReadTime">10 min</p>
         <p class="blogCardDescription">
-            Explosive exercise like jumping and throwing isn't just for athletes, it's for anyone who wants to feel amazing!
+          Explosive exercise like jumping and throwing isn't just for athletes,
+          it's for anyone who wants to feel amazing!
         </p>
       </div>
 
       <!-- Lifting - Medicine For Achy Joints -->
-      <div class="blogCard" onclick="location.href='./blog/lifting-medicine.html'">
-        <div class="blogCardImage"
-        style="background-image: url(./blog/blog-pix/lifting-medicine.jpg)">
-        </div>
-        <h3 class="blogCardTitle">
-            Lifting - Medicine For Achy Joints
-        </h3>
-        <p class="blogCardReadTime">
-            6 min
-        </p>
+      <div
+        class="blogCard"
+        onclick="location.href='./blog/lifting-medicine.html'"
+      >
+        <div
+          class="blogCardImage"
+          style="background-image: url(./blog/blog-pix/lifting-medicine.jpg)"
+        ></div>
+        <h3 class="blogCardTitle">Lifting - Medicine For Achy Joints</h3>
+        <p class="blogCardReadTime">6 min</p>
         <p class="blogCardDescription">
-            While it may sound surprising, lifting weights has been shown in numerous studies to help with joint pain, even arthritis.
+          While it may sound surprising, lifting weights has been shown in
+          numerous studies to help with joint pain, even arthritis.
         </p>
       </div>
-
     </div>
 
-    <button id="scrollToTopButton" class="hidden" onclick="scrollToTop()"></button>
+    <button
+      id="scrollToTopButton"
+      class="hidden"
+      onclick="scrollToTop()"
+    ></button>
 
     <footer>
-        <div id="footerTop">
-
-            <div id="socialMediaIcons">
-                <a href="https://www.facebook.com/TheLiftingSchool" target="_blank">
-                    <img id="facebookLogo"  class="footerLogo" src="./icons/facebook.svg">
-                </a>
-                <a href="https://www.instagram.com/liftingschool/" target="_blank">
-                    <img id="instaLogo"   class="footerLogo" src="./icons/instagram.svg">
-                </a>
-                <a href="https://www.youtube.com/@theliftingschool3083" target="_blank">
-                    <img id="youtubeLogo"   class="footerLogo" src="./icons/youtube.svg">
-                </a>
-            </div>  
-
-            <p id="siteCopyright">
-                Copyright &copy 2023 The Lifting School LLC
-                <br>
-                Boise, ID 83706
-            </p>
-
-            <a id="siteMail" href="mailto: info@theliftingschool.com">info@theliftingschool.com</a>       
+      <div id="footerTop">
+        <div id="socialMediaIcons">
+          <a href="https://www.facebook.com/TheLiftingSchool" target="_blank">
+            <img
+              id="facebookLogo"
+              class="footerLogo"
+              src="./icons/facebook.svg"
+            />
+          </a>
+          <a href="https://www.instagram.com/liftingschool/" target="_blank">
+            <img
+              id="instaLogo"
+              class="footerLogo"
+              src="./icons/instagram.svg"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@theliftingschool3083"
+            target="_blank"
+          >
+            <img
+              id="youtubeLogo"
+              class="footerLogo"
+              src="./icons/youtube.svg"
+            />
+          </a>
         </div>
 
-        <div id="footerBot">
-            <p id="siteCredit">This site was built by Matt Talley</p>
-            <a href="https://github.com/socrastein" target="_blank">
-                <img id="gitLogo"       class="footerLogo" src="./icons/github.svg">
-            </a>
-        </div>
+        <p id="siteCopyright">
+          Copyright &copy 2023 The Lifting School LLC
+          <br />
+          Boise, ID 83706
+        </p>
 
+        <a id="siteMail" href="mailto: info@theliftingschool.com"
+          >info@theliftingschool.com</a
+        >
+      </div>
+
+      <div id="footerBot">
+        <p id="siteCredit">This site was built by Matt Talley</p>
+        <a href="https://github.com/socrastein" target="_blank">
+          <img id="gitLogo" class="footerLogo" src="./icons/github.svg" />
+        </a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>

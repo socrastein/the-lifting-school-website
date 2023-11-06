@@ -1,354 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Matt Talley">
-    <meta name="referrer" content="origin">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matt Talley" />
+    <meta name="referrer" content="origin" />
+
     <title>The Lifting School | Online Training Programs & Education</title>
-    <meta name="description" content="Get a personally tailored exercise program built by a professional trainer with 15+ years of experience">
-    <link rel="icon" type="image/x-icon" href="./pics/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Get a personally tailored exercise program built by a professional trainer with 15+ years of experience"
+    />
+    <link rel="icon" type="image/x-icon" href="./pics/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
-
-    <div id="header"> 
-        <div id="siteID">
-
-            <div id="siteName">
-                <img src="./icons/logo.svg" id="bizLogo"
-                alt="Penrose triangle with white, neon-purple and charcoal-grey sides">
-                <a href="./">
-                    <h2 id="bizName" class="headerText">
-                    The Lifting School
-                    </h2>
-                </a>
-
-            </div>
-
-            <p id="tagLine" class="headerText">
-            Training and education for sensible lifters
-            </p>
-
+  <body>
+    <div id="header">
+      <div id="siteID">
+        <div id="siteName">
+          <img
+            src="./icons/logo.svg"
+            id="bizLogo"
+            alt="Penrose triangle with white, neon-purple and charcoal-grey sides"
+          />
+          <a href="./">
+            <h2 id="bizName" class="headerText">The Lifting School</h2>
+          </a>
         </div>
 
-        <!-- <div id="searchBar"></div> -->
-        <!-- <div id="colorMode"></div> -->
-        
-        <input type="image" src="./icons/menu.svg" class="hidden" id="menuIcon">
+        <p id="tagLine" class="headerText">
+          Training and education for sensible lifters
+        </p>
+      </div>
 
-        <div id="menuBar">
-            <a href="./" class="headerText menuBarItem currentPage">
-            Home</a>
-            <a href="blog.html" class="headerText menuBarItem">
-            Blog</a>
-            <a href="services.html" class="headerText menuBarItem">
-            Services</a>
-            <a href="about.html" class="headerText menuBarItem">
-            About</a>
-        </div>
+      <!-- <div id="searchBar"></div> -->
+      <!-- <div id="colorMode"></div> -->
+
+      <input type="image" src="./icons/menu.svg" class="hidden" id="menuIcon" />
+
+      <div id="menuBar">
+        <a href="./" class="headerText menuBarItem currentPage"> Home</a>
+        <a href="blog.html" class="headerText menuBarItem"> Blog</a>
+        <a href="services.html" class="headerText menuBarItem"> Services</a>
+        <a href="about.html" class="headerText menuBarItem"> About</a>
+      </div>
     </div>
 
-    
     <!-- MAIN BODY -->
     <div id="mainContainer">
-
-        <div class="pageTop homeImage">
-            <div class="pageIntro opaqueBackground">
-                <div class="introTop">
-                    <h1 id="pageTitle" class="whiteText">Online Training Programs</h1>
-                    <h2 id="pageSubTitle" class="magentaTextBright"><b>Uniquely tailored to you</b></h2>
-                    <br>
-                    <h2 id="pageTagline">
-                        <br>
-                        <span class="whiteText">Most people are winging it at the gym</span>
-                        <br>
-                        <br>
-                        <span class="magentaText">Be the lifter who knows exactly what they're doing and why</span>
-                    </h2>
-                </div>
-                <br>
-                <div class="introBottom">
-                    <h2 class="whiteText">
-                        First 12 Weeks 
-                        <br>
-                        $275
-                    </h2>
-                    <br>
-                    <button type="button" onclick="location.href='signup.html'" 
-                    class="signUpButton">SIGN UP</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="cardContainer">
-
-            <h2>How Does It Work?</h2>
-            <br>
-            <div id="cards">
-
-                <div class="card">
-                    <div class="cardTop">
-                        <a href="signup.html"><img class="cardIcon" src="./icons/form.svg"></a>
-                        <h3 class="whiteText">Step 1</h3>
-                    </div>
-                    <div class="cardBottom">
-                        <a href="signup.html">
-                            <h4>Fill out a form</h4>
-                        </a>
-                        <p>
-                            Give some basic info about your goals, equipment, time availability and any joint pain you've had recently. I'll contact you with a few follow-up questions.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop">
-                        <img class="cardIcon" src="./icons/cloud-upload.svg">
-                        <h3 class="whiteText">Step 2</h3>
-                    </div>
-
-                    <div class="cardBottom">
-                        <h4>Get your program</h4>
-                        <p>
-                            Once I have all the relevant info, I'll send you a <a href="https://paypal.com" target="_blank">PayPal</a> invoice. Your custom program will be uploaded to  
-                            <a href="https://www.google.com/drive/" target="_blank">Google Drive</a> so we can both view, edit and add comments.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop">
-                        <img class="cardIcon" src="./icons/videocam.svg">
-                        <h3 class="whiteText">Step 3</h3>
-                    </div>
-
-                    <div class="cardBottom">
-                        <h4>Get video coaching</h4>
-                        <p> 
-                            Send me videos of your lifts so I can help with your form, and I'll answer any questions you have over email. You also get a private video training session every month.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop">
-                        <img class="cardIcon" src="./icons/fast-forward.svg">
-                        <h3 class="whiteText">Going Forward</h3>
-                    </div>
-
-                    <div class="cardBottom">
-                        <h4>Updates as needed</h4>
-                        <p>
-                            The program is updated every month and steadily progressed over time. As your schedule, goals and equipment change, I will alter the plan accordingly.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="cardContainer">
-
-            <h2>Programs For Any Goal</h2>
-            <br>
-            <div id="cards">
-
-                <div class="card">
-                    <div class="cardTop" id="healthCard">
-                    </div>
-                    <div class="cardBottom">
-                        <h4>General Health</h4>
-                        <p>
-                            Focus on overall fitness, energy levels and mobility. Exercise to simply move and feel better in your body.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop" id="strengthCard">
-                    </div>
-                    <div class="cardBottom">
-                        <h4>Strength</h4>
-                        <p>
-                            Build up to heavy loads intelligently, without ever pushing through joint pain or taking excessive risk.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop" id="cardioCard">
-                    </div>
-                    <div class="cardBottom">
-                        <h4>Cardio</h4>
-                        <p>
-                            Improve your gait, endurance and speed with reasonable progressions that won't ruin your joints over time.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="cardTop" id="compCard">
-                    </div>
-                    <div class="cardBottom">
-                        <h4>Body Comp</h4>
-                        <p>
-                            Build lean mass or lose fat with challenging hypertrophy workouts coupled with sustainable nutrition habits.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="checkListContainer darkBackground">
-            <h2 class="whiteText">
-                Exceptional Service
+      <div class="pageTop homeImage">
+        <div class="pageIntro opaqueBackground">
+          <div class="introTop">
+            <h1 id="pageTitle" class="whiteText">Online Training Programs</h1>
+            <h2 id="pageSubTitle" class="magentaTextBright">
+              <b>Uniquely tailored to you</b>
             </h2>
-            <br><br>
-            <div class="checkList">
-                <div class="checkBlock">
-                    <div class="checkListItem">
-                        <img class="checkIcon" src="./icons/check.svg">
-                        <h5 class="whiteText">Personalized to your goals</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="checkIcon" src="./icons/check.svg">
-                        <h5 class="whiteText">Written by a professional</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="checkIcon" src="./icons/check.svg">
-                        <h5 class="whiteText">Evidence-based workouts</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="checkIcon" src="./icons/check.svg">
-                        <h5 class="whiteText">Sustainable habits</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="checkIcon" src="./icons/check.svg">
-                        <h5 class="whiteText">Coaching by email & video</h5>
-                    </div>
-                </div>
-                <div class="checkBlock">
-                    <div class="checkListItem">
-                        <img class="XIcon" src="./icons/x.svg">
-                        <h5 class="whiteText">No generic programs</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="XIcon" src="./icons/x.svg">
-                        <h5 class="whiteText">No amateur guesswork</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="XIcon" src="./icons/x.svg">
-                        <h5 class="whiteText">No trendy gimmicks</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="XIcon" src="./icons/x.svg">
-                        <h5 class="whiteText">No extreme diets</h5>
-                    </div>
-                    <div class="checkListItem">
-                        <img class="XIcon" src="./icons/x.svg">
-                        <h5 class="whiteText">No struggling alone</h5>
-                    </div>
-                </div>
-            </div>
-        </div>     
-
-        <div id="mattBio">
-
-            <div id="mattPic" onclick="location.href='about.html'"></div>
-            <div>
-                <p id="bioText">
-                    I want to teach you how to lift weights correctly so you can minimize the risks 
-                    and get great results. 
-                    <br><br>
-                    Exercise shouldn't be about getting tired or hurt.
-                    <br><br>
-                    The goal is tangible improvement and feeling better.               
-                </p>
-                <br><br>
-                <p id="bioSig" onclick="location.href='about.html'">
-                    <span class="magentaText">Coach</span> Matt Talley
-                </p>
-            </div>
-
+            <br />
+            <h2 id="pageTagline">
+              <br />
+              <span class="whiteText"
+                >Most people are winging it at the gym</span
+              >
+              <br />
+              <br />
+              <span class="magentaText"
+                >Be the lifter who knows exactly what they're doing and
+                why</span
+              >
+            </h2>
+          </div>
+          <br />
+          <div class="introBottom">
+            <h2 class="whiteText">
+              First 12 Weeks
+              <br />
+              $275
+            </h2>
+            <br />
+            <button
+              type="button"
+              onclick="location.href='signup.html'"
+              class="signUpButton"
+            >
+              SIGN UP
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="slideShow" id="testimonials">
-            <h2>Client Testimony</h2>
-            <br><br>
-            <div id="slideContainer">
-                <div class="slidePic fadeIn" id="clientPhoto">
-                    <img class="slideArrow" id="slideLeft" 
-                    src="./icons/arrow.svg" onclick="previousSlide()">
-                    <img class="slideArrow" id="slideRight" 
-                    src="./icons/arrow.svg" onclick="nextSlide()">
-                </div>            
+      <div id="cardContainer">
+        <h2>How Does It Work?</h2>
+        <br />
+        <div id="cards">
+          <div class="card">
+            <div class="cardTop">
+              <a href="signup.html"
+                ><img class="cardIcon" src="./icons/form.svg"
+              /></a>
+              <h3 class="whiteText">Step 1</h3>
             </div>
-            <div class="slideText fadeIn" id="slideText">
-                <div id="clientName">
-                </div>
-                <div id="clientTestimonial">
-                </div>
+            <div class="cardBottom">
+              <a href="signup.html">
+                <h4>Fill out a form</h4>
+              </a>
+              <p>
+                Give some basic info about your goals, equipment, time
+                availability and any joint pain you've had recently. I'll
+                contact you with a few follow-up questions.
+              </p>
             </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop">
+              <img class="cardIcon" src="./icons/cloud-upload.svg" />
+              <h3 class="whiteText">Step 2</h3>
+            </div>
+
+            <div class="cardBottom">
+              <h4>Get your program</h4>
+              <p>
+                Once I have all the relevant info, I'll send you a
+                <a href="https://paypal.com" target="_blank">PayPal</a> invoice.
+                Your custom program will be uploaded to
+                <a href="https://www.google.com/drive/" target="_blank"
+                  >Google Drive</a
+                >
+                so we can both view, edit and add comments.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop">
+              <img class="cardIcon" src="./icons/videocam.svg" />
+              <h3 class="whiteText">Step 3</h3>
+            </div>
+
+            <div class="cardBottom">
+              <h4>Get video coaching</h4>
+              <p>
+                Send me videos of your lifts so I can help with your form, and
+                I'll answer any questions you have over email. You also get a
+                private video training session every month.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop">
+              <img class="cardIcon" src="./icons/fast-forward.svg" />
+              <h3 class="whiteText">Going Forward</h3>
+            </div>
+
+            <div class="cardBottom">
+              <h4>Updates as needed</h4>
+              <p>
+                The program is updated every month and steadily progressed over
+                time. As your schedule, goals and equipment change, I will alter
+                the plan accordingly.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="callToAction">
-            <div class="actionBox">
-                <h2 class="whiteText">
-                    Are you ready to <span class="magentaTextBright">workout with confidence?</span>
-                </h2> 
-                <br><br>
-                <h3 class="whiteText">
-                    Would you like for everything you're doing to be part of an 
-                    expertly-constructed plan to <span class="magentaTextBright">achieve your goals?</span>  
-                </h3>
+      <div id="cardContainer">
+        <h2>Programs For Any Goal</h2>
+        <br />
+        <div id="cards">
+          <div class="card">
+            <div class="cardTop" id="healthCard"></div>
+            <div class="cardBottom">
+              <h4>General Health</h4>
+              <p>
+                Focus on overall fitness, energy levels and mobility. Exercise
+                to simply move and feel better in your body.
+              </p>
             </div>
-            <button type="button" onclick="location.href='signup.html'" 
-                    class="signUpButton">SIGN UP</button>
-        </div>    
+          </div>
 
+          <div class="card">
+            <div class="cardTop" id="strengthCard"></div>
+            <div class="cardBottom">
+              <h4>Strength</h4>
+              <p>
+                Build up to heavy loads intelligently, without ever pushing
+                through joint pain or taking excessive risk.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop" id="cardioCard"></div>
+            <div class="cardBottom">
+              <h4>Cardio</h4>
+              <p>
+                Improve your gait, endurance and speed with reasonable
+                progressions that won't ruin your joints over time.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop" id="compCard"></div>
+            <div class="cardBottom">
+              <h4>Body Comp</h4>
+              <p>
+                Build lean mass or lose fat with challenging hypertrophy
+                workouts coupled with sustainable nutrition habits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkListContainer darkBackground">
+        <h2 class="whiteText">Exceptional Service</h2>
+        <br /><br />
+        <div class="checkList">
+          <div class="checkBlock">
+            <div class="checkListItem">
+              <img class="checkIcon" src="./icons/check.svg" />
+              <h5 class="whiteText">Personalized to your goals</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="checkIcon" src="./icons/check.svg" />
+              <h5 class="whiteText">Written by a professional</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="checkIcon" src="./icons/check.svg" />
+              <h5 class="whiteText">Evidence-based workouts</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="checkIcon" src="./icons/check.svg" />
+              <h5 class="whiteText">Sustainable habits</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="checkIcon" src="./icons/check.svg" />
+              <h5 class="whiteText">Coaching by email & video</h5>
+            </div>
+          </div>
+          <div class="checkBlock">
+            <div class="checkListItem">
+              <img class="XIcon" src="./icons/x.svg" />
+              <h5 class="whiteText">No generic programs</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="XIcon" src="./icons/x.svg" />
+              <h5 class="whiteText">No amateur guesswork</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="XIcon" src="./icons/x.svg" />
+              <h5 class="whiteText">No trendy gimmicks</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="XIcon" src="./icons/x.svg" />
+              <h5 class="whiteText">No extreme diets</h5>
+            </div>
+            <div class="checkListItem">
+              <img class="XIcon" src="./icons/x.svg" />
+              <h5 class="whiteText">No struggling alone</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mattBio">
+        <div id="mattPic" onclick="location.href='about.html'"></div>
+        <div>
+          <p id="bioText">
+            I want to teach you how to lift weights correctly so you can
+            minimize the risks and get great results.
+            <br /><br />
+            Exercise shouldn't be about getting tired or hurt.
+            <br /><br />
+            The goal is tangible improvement and feeling better.
+          </p>
+          <br /><br />
+          <p id="bioSig" onclick="location.href='about.html'">
+            <span class="magentaText">Coach</span> Matt Talley
+          </p>
+        </div>
+      </div>
+
+      <div class="slideShow" id="testimonials">
+        <h2>Client Testimony</h2>
+        <br /><br />
+        <div id="slideContainer">
+          <div class="slidePic fadeIn" id="clientPhoto">
+            <img
+              class="slideArrow"
+              id="slideLeft"
+              src="./icons/arrow.svg"
+              onclick="previousSlide()"
+            />
+            <img
+              class="slideArrow"
+              id="slideRight"
+              src="./icons/arrow.svg"
+              onclick="nextSlide()"
+            />
+          </div>
+        </div>
+        <div class="slideText fadeIn" id="slideText">
+          <div id="clientName"></div>
+          <div id="clientTestimonial"></div>
+        </div>
+      </div>
+
+      <div class="callToAction">
+        <div class="actionBox">
+          <h2 class="whiteText">
+            Are you ready to
+            <span class="magentaTextBright">workout with confidence?</span>
+          </h2>
+          <br /><br />
+          <h3 class="whiteText">
+            Would you like for everything you're doing to be part of an
+            expertly-constructed plan to
+            <span class="magentaTextBright">achieve your goals?</span>
+          </h3>
+        </div>
+        <button
+          type="button"
+          onclick="location.href='signup.html'"
+          class="signUpButton"
+        >
+          SIGN UP
+        </button>
+      </div>
     </div>
 
-    <button id="scrollToTopButton" class="hidden" onclick="scrollToTop()"></button>
+    <button
+      id="scrollToTopButton"
+      class="hidden"
+      onclick="scrollToTop()"
+    ></button>
 
     <footer>
-        <div id="footerTop">
-
-            <div id="socialMediaIcons">
-                <a href="https://www.facebook.com/TheLiftingSchool" target="_blank">
-                    <img id="facebookLogo"  class="footerLogo" src="./icons/facebook.svg">
-                </a>
-                <a href="https://www.instagram.com/liftingschool/" target="_blank">
-                    <img id="instaLogo"   class="footerLogo" src="./icons/instagram.svg">
-                </a>
-                <a href="https://www.youtube.com/@theliftingschool3083" target="_blank">
-                    <img id="youtubeLogo"   class="footerLogo" src="./icons/youtube.svg">
-                </a>
-            </div>  
-
-            <p id="siteCopyright">
-                Copyright &copy 2023 The Lifting School LLC
-                <br>
-                Boise, ID 83706
-            </p>
-
-            <a id="siteMail" href="mailto: info@theliftingschool.com">info@theliftingschool.com</a>       
+      <div id="footerTop">
+        <div id="socialMediaIcons">
+          <a href="https://www.facebook.com/TheLiftingSchool" target="_blank">
+            <img
+              id="facebookLogo"
+              class="footerLogo"
+              src="./icons/facebook.svg"
+            />
+          </a>
+          <a href="https://www.instagram.com/liftingschool/" target="_blank">
+            <img
+              id="instaLogo"
+              class="footerLogo"
+              src="./icons/instagram.svg"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@theliftingschool3083"
+            target="_blank"
+          >
+            <img
+              id="youtubeLogo"
+              class="footerLogo"
+              src="./icons/youtube.svg"
+            />
+          </a>
         </div>
 
-        <div id="footerBot">
-            <p id="siteCredit">This site was built by Matt Talley</p>
-            <a href="https://github.com/socrastein" target="_blank">
-                <img id="gitLogo"       class="footerLogo" src="./icons/github.svg">
-            </a>
-        </div>
+        <p id="siteCopyright">
+          Copyright &copy 2023 The Lifting School LLC
+          <br />
+          Boise, ID 83706
+        </p>
 
+        <a id="siteMail" href="mailto: info@theliftingschool.com"
+          >info@theliftingschool.com</a
+        >
+      </div>
+
+      <div id="footerBot">
+        <p id="siteCredit">This site was built by Matt Talley</p>
+        <a href="https://github.com/socrastein" target="_blank">
+          <img id="gitLogo" class="footerLogo" src="./icons/github.svg" />
+        </a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
