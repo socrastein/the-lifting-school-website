@@ -110,7 +110,7 @@ const slideText = document.getElementById("slideText");
 const clientPhoto = document.getElementById("clientPhoto");
 const clientName = document.getElementById("clientName");
 const clientText = document.getElementById("clientTestimonial");
-let currentSlide = Math.floor(Math.random() * 20);
+let currentSlide = Math.floor(Math.random() * 19);
 
 const clients = [
   {
@@ -236,7 +236,7 @@ const updateSlide = () => {
   });
 };
 
-if (pagePath == "/index.html") {
+if (pagePath == "/") {
   testimonials.addEventListener("touchstart", handleTouchStart, false);
   testimonials.addEventListener("touchmove", handleTouchMove, false);
 }
