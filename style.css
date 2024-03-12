@@ -1005,7 +1005,7 @@ article {
   padding-top: 2rem;
   min-height: 300px;
   margin: 0 auto;
-  max-width: min(740px, 90%);
+  width: min(740px, 90%);
   gap: 1.5rem;
 }
 
