@@ -10,32 +10,13 @@ if (pagePath.includes("blog/")) {
 
 const menuBar = document.getElementById("menuBar");
 const menuIcon = document.getElementById("menuIcon");
-const bizLogo = document.getElementById("bizLogo");
-const bizName = document.getElementById("bizName");
-const tagLine = document.getElementById("tagLine");
 
-let screenWidth = window.screen.width;
-
-const onResize = function () {
-  screenWidth = window.screen.width;
-  if (screenWidth < 500) {
-    bizName.style.fontSize = "1.4rem";
-    bizLogo.style.height = "30px";
-    bizLogo.style.width = "30px";
-    menuBar.style.display = "none";
-    menuBar.style.borderRadius = "0 0 12px 12px";
-    menuBar.style.boxShadow = "0 2px 4px rgb(var(--white-smoke))";
-    menuIcon.style.display = "flex";
-    tagLine.style.fontSize = ".8rem";
-  } else {
-    bizName.style.fontSize = "2rem";
-    bizLogo.style.height = "50px";
-    bizLogo.style.width = "50px";
+const mediaQueryList = window.matchMedia("(min-width: 621px)");
+mediaQueryList.onchange = (event) => {
+  if (event.matches) {
     menuBar.style.display = "flex";
-    menuBar.style.borderRadius = "0";
-    menuBar.style.boxShadow = "none";
-    menuIcon.style.display = "none";
-    tagLine.style.fontSize = "1rem";
+  } else {
+    menuBar.style.display = "none";
   }
 };
 
@@ -85,9 +66,7 @@ const outsideClickListener = (event) => {
   }
 };
 
-window.addEventListener("resize", onResize);
 menuIcon.addEventListener("click", openMenuBar);
-onResize();
 
 ///////////////////////
 // SCROLL-TO-TOP /////
