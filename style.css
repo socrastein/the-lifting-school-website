@@ -1,6 +1,6 @@
 :root {
   /* RGB Codes for Custom Colors */
-  --white-smoke: 225, 225, 215;
+  --white-smoke: 242, 243, 244;
   --grey-smoke: 150, 150, 160;
   --charcoal: 27, 27, 31;
   --magenta: 144, 0, 144;
@@ -233,6 +233,16 @@ p {
 
 .flexCentered {
   align-items: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .centered {
@@ -907,6 +917,7 @@ a:active {
   align-items: flex-start;
   gap: 1.5rem;
   padding: 2rem min(3%, 3rem);
+  min-width: 24rem;
   max-width: 100%;
 }
 
@@ -950,6 +961,10 @@ textarea {
   gap: 4px;
 }
 
+.gap1Rem {
+  gap: 1rem;
+}
+
 .formInput {
   height: 1.5rem;
   font-size: 1.1rem;
@@ -968,6 +983,10 @@ textarea {
 
 #formAge,
 #formGender {
+  width: 6rem;
+}
+
+.formSmallWidth {
   width: 6rem;
 }
 
@@ -1151,6 +1170,15 @@ article img {
 }
 
 /* #endregion */
+
+/* ************** */
+/* MACRO PLANNER */
+/* ************ */
+
+.smallButton {
+  height: 1.5rem;
+  min-width: 3rem;
+}
 
 /* ******* */
 /* FOOTER */
