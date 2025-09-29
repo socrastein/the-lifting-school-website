@@ -57,7 +57,7 @@
 
         <div class="introBottom flexColumn">
           <h2 class="darkText centerText">
-            First 12 Weeks <span class="magentaTextBright"><br />$275</span>
+            First 12 Weeks <span class="magentaTextBright"><br />$315</span>
           </h2>
           <br />
           <button
@@ -80,7 +80,7 @@
               <h3 class="whiteText">Months</h3>
             </div>
             <div class="cardBottom">
-              <h3>$315</h3>
+              <h3 id="onlinePackagePrice3Months"></h3>
             </div>
           </div>
 
@@ -91,7 +91,7 @@
             </div>
 
             <div class="cardBottom">
-              <h3>$599</h3>
+              <h3 id="onlinePackagePrice6months"></h3>
               <h5 class="magentaText boldText">Save 5%</h5>
             </div>
           </div>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="cardBottom">
-              <h3>$1,134</h3>
+              <h3 id="onlinePackagePrice12months"></h3>
               <h5 class="magentaText boldText">Save 10%</h5>
             </div>
           </div>
@@ -115,7 +115,7 @@
             </div>
 
             <div class="cardBottom">
-              <h3>$2,142</h3>
+              <h3 id="onlinePackagePrice24months"></h3>
               <h5 class="magentaText boldText">Save 15%</h5>
             </div>
           </div>
@@ -259,4 +259,16 @@
       </div>
     </footer>
   </body>
+
+  <script defer>
+    const onlinePackage3months = 365;
+    const onlinePackage6months = ((onlinePackage3months * 2) * .95).toFixed(0);
+    const onlinePackage12months = ((onlinePackage3months * 4) * .9).toFixed(0);
+    const onlinePackage24months = ((onlinePackage3months * 8) * .8).toFixed(0);
+
+    document.getElementById("onlinePackagePrice3Months").textContent = '$' + onlinePackage3months;
+    document.getElementById("onlinePackagePrice6months").textContent = '$' + onlinePackage6months;
+    document.getElementById("onlinePackagePrice12months").textContent = '$' + onlinePackage12months;
+    document.getElementById("onlinePackagePrice24months").textContent = '$' + onlinePackage24months;
+  </script>
 </html>
