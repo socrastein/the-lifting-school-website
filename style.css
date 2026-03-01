@@ -755,7 +755,7 @@ a:active {
   width: 250px;
   border-radius: 50%;
   box-shadow: 1px 1px 5px rgb(var(--deep-purple));
-  background-image: url(./pics/matt.JPG);
+  background-image: url(./pics/mattAndSam.jpg);
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease;
