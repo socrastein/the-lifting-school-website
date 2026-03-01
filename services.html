@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
     />
     <link rel="icon" type="image/x-icon" href="./pics/favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="pricing.js" defer></script>
     <script src="script.js" defer></script>
   </head>
 
@@ -49,26 +50,11 @@
 
     <!-- MAIN BODY -->
     <div id="mainContainer">
-      <article class="flexColumn">
-        <div class="flexColumn flexCentered">
-          <div id="blogTitleContainer">
-            <h1 id="blogTitle">Services & Pricing</h1>
-          </div>
-
-        <div class="introBottom flexColumn">
-          <h2 class="darkText centerText">
-            First 12 Weeks <span class="magentaTextBright"><br />$275</span>
-          </h2>
-          <br />
-          <button
-            type="button"
-            onclick="location.href='signup.html'"
-            class="signUpButton"
-          >
-            SIGN UP
-          </button>
+      <div class="flexColumn flexCentered">
+        <div id="blogTitleContainer">
+          <h1 id="blogTitle">Services & Pricing</h1>
         </div>
-      </article>
+      </div>
 
       <div id="cardContainer">
         <h2>Online Training Packages</h2>
@@ -80,7 +66,7 @@
               <h3 class="whiteText">Months</h3>
             </div>
             <div class="cardBottom">
-              <h3>$315</h3>
+              <h3>$360</h3>
             </div>
           </div>
 
@@ -91,7 +77,7 @@
             </div>
 
             <div class="cardBottom">
-              <h3>$599</h3>
+              <h3>$684</h3>
               <h5 class="magentaText boldText">Save 5%</h5>
             </div>
           </div>
@@ -103,20 +89,35 @@
             </div>
 
             <div class="cardBottom">
-              <h3>$1,134</h3>
+              <h3>$1,296</h3>
               <h5 class="magentaText boldText">Save 10%</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cardContainer">
+        <h2>Private Video Sessions</h2>
+        <br />
+        <div id="cards">
+          <div class="card">
+            <div class="cardTop">
+              <p class="cardIcon">30</p>
+              <h3 class="whiteText">Minutes</h3>
+            </div>
+            <div class="cardBottom">
+              <h3>$45</h3>
             </div>
           </div>
 
           <div class="card">
             <div class="cardTop">
-              <p class="cardIcon">2</p>
-              <h3 class="whiteText">Years</h3>
+              <p class="cardIcon">60</p>
+              <h3 class="whiteText">Minutes</h3>
             </div>
 
             <div class="cardBottom">
-              <h3>$2,142</h3>
-              <h5 class="magentaText boldText">Save 15%</h5>
+              <h3>$75</h3>
             </div>
           </div>
         </div>
@@ -173,31 +174,32 @@
 
       <div>
         <h2 class="darkText centered openText">
-          Just to be clear,
+          Just to be clear...
           <br /><br />
-          You don't have to do cardio, change your diet or video chat every
-          month.
+          You don't have to do cardio, change your diet, or video chat with me
+          every month.
           <br /><br />
-          These services are available to you if and when you need them.
+          These services are always available to you if and when you need and
+          want them.
         </h2>
       </div>
 
       <div class="callToAction">
         <div class="actionBox">
           <h2 class="whiteText">
-            Are you ready to
-            <span class="magentaTextBright">workout with confidence?</span>
+            Are you ready for
+            <span class="magentaTextBright">professional support?</span>
           </h2>
           <br /><br />
           <h3 class="whiteText">
             Would you like for everything you're doing to be part of an
             expertly-constructed plan to
-            <span class="magentaTextBright">achieve your goals?</span>
+            <span class="magentaTextBright">improve your health and fitness?</span>
           </h3>
         </div>
         <button
           type="button"
-          onclick="location.href='signup.html'"
+          onclick="location.href = 'signup.html'"
           class="signUpButton"
         >
           SIGN UP
