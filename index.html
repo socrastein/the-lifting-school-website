@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -52,19 +52,20 @@
           <div class="introTop">
             <h1 id="pageTitle" class="whiteText">
               Online Training<br />
-              <span class="greyText">No Gimmicks</span>
+              <span class="greyText">with an experienced professional</span>
             </h1>
             <h2 id="pageSubTitle" class="greyText">
-              Get back to the basics with simple workouts tailored for you.
+              Get back to the basics with simple, challenging workouts
+              personally tailored to your needs.
             </h2>
           </div>
           <div class="introBottom">
             <h2 class="whiteText">
-              First 12 Weeks <span class="magentaTextBright">$275</span>
+              First 3 months <span class="magentaTextBright">$315</span>
             </h2>
             <button
               type="button"
-              onclick="location.href='signup.html'"
+              onclick="location.href = 'signup.html'"
               class="signUpButton"
             >
               SIGN UP
@@ -74,6 +75,77 @@
         <div class="bigLogoContainer">
           <div class="homeImage"></div>
           <div class="bigLogo"></div>
+        </div>
+      </div>
+
+      <div id="mattBio">
+        <div id="mattPic" onclick="location.href = 'about.html'"></div>
+        <div>
+          <p id="bioText">
+            I want to teach you how to lift weights correctly so you can
+            minimize the risks and get great results.
+            <br /><br />
+            Exercise isn't about getting tired or hurt. The goal is tangible
+            improvement and feeling better.
+          </p>
+          <br /><br />
+          <p id="bioSig" onclick="location.href = 'about.html'">
+            <span class="magentaText">Coach</span> Matt Talley
+          </p>
+        </div>
+      </div>
+
+      <div id="cardContainer">
+        <h2>Programming Includes</h2>
+        <br />
+        <div id="cards">
+          <div class="card">
+            <div class="cardTop" id="strengthCard"></div>
+            <div class="cardBottom">
+              <h4>Strength Training</h4>
+              <p>
+                Build up to heavy loads intelligently with solid form. We will
+                never push through joint pain, and the level of challenge is
+                suited to your experience and goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop" id="cardioCard"></div>
+            <div class="cardBottom">
+              <h4>Cardio & Conditioning</h4>
+              <p>
+                Whether your goals require easy aerobic sessions or
+                high-intensity interval training, I'll program cardio workouts
+                that fit your needs, preferences, and schedule.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop" id="compCard"></div>
+            <div class="cardBottom">
+              <h4>Hypertrophy Work</h4>
+              <p>
+                Almost every goal, even just a desire to improve general health
+                and energy levels, will benefit from at least a little accessory
+                work meant to maintain or build muscle.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardTop" id="healthCard"></div>
+            <div class="cardBottom">
+              <h4>Focused Mobility</h4>
+              <p>
+                Mobility work is meant to support your strength training, not be
+                a chore. I'll give you simple mobility exercises that are
+                targeted to your needs and goals.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -93,9 +165,10 @@
                 <h4>Fill out a form</h4>
               </a>
               <p>
-                Give some basic info about your goals, equipment, time
-                availability and any joint pain you've had recently. I'll
-                contact you with a few follow-up questions.
+                Give me some basic info about your goals, equipment, time
+                availability, etc. I'll send you a
+                <a href="https://stripe.com/" target="_blank">Stripe</a>
+                invoice for the first 3 months of coaching.
               </p>
             </div>
           </div>
@@ -109,13 +182,10 @@
             <div class="cardBottom">
               <h4>Get your program</h4>
               <p>
-                Once I have all the relevant info, I'll send you a
-                <a href="https://paypal.com" target="_blank">PayPal</a> invoice.
-                Your custom program will be uploaded to
+                I personally write you a custom program and upload it to
                 <a href="https://www.google.com/drive/" target="_blank"
                   >Google Drive</a
-                >
-                so we can both view, edit and add comments.
+                >, answering any questions you have about the workouts.
               </p>
             </div>
           </div>
@@ -129,9 +199,9 @@
             <div class="cardBottom">
               <h4>Get video coaching</h4>
               <p>
-                Send me videos of your lifts so I can help with your form, and
-                I'll answer any questions you have over email. You also get a
-                private video training session every month.
+                You get a 60 min video session every month, and can send me
+                clips of any exercise you want a form check on between our
+                sessions.
               </p>
             </div>
           </div>
@@ -145,59 +215,9 @@
             <div class="cardBottom">
               <h4>Updates as needed</h4>
               <p>
-                The program is updated every month and steadily progressed over
-                time. As your schedule, goals and equipment change, I will alter
-                the plan accordingly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="cardContainer">
-        <h2>Programs For Any Goal</h2>
-        <br />
-        <div id="cards">
-          <div class="card">
-            <div class="cardTop" id="healthCard"></div>
-            <div class="cardBottom">
-              <h4>General Health</h4>
-              <p>
-                Focus on overall fitness, energy levels and mobility. Exercise
-                to simply move and feel better in your body.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardTop" id="strengthCard"></div>
-            <div class="cardBottom">
-              <h4>Strength</h4>
-              <p>
-                Build up to heavy loads intelligently, without ever pushing
-                through joint pain or taking excessive risk.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardTop" id="cardioCard"></div>
-            <div class="cardBottom">
-              <h4>Cardio</h4>
-              <p>
-                Improve your gait, endurance and speed with reasonable
-                progressions that won't ruin your joints over time.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardTop" id="compCard"></div>
-            <div class="cardBottom">
-              <h4>Body Comp</h4>
-              <p>
-                Build lean mass or lose fat with challenging hypertrophy
-                workouts coupled with sustainable nutrition habits.
+                I update your program every month. If you have any questions or
+                want to make adjustments to the program at any time, just let me
+                know.
               </p>
             </div>
           </div>
@@ -211,65 +231,51 @@
           <div class="checkBlock">
             <div class="checkListItem">
               <img class="checkIcon" src="./icons/check.svg" />
-              <h5 class="whiteText">Personalized to your goals</h5>
+              <h5 class="whiteText">Personalized workouts and communication</h5>
             </div>
             <div class="checkListItem">
               <img class="checkIcon" src="./icons/check.svg" />
-              <h5 class="whiteText">Written by a professional</h5>
+              <h5 class="whiteText">Learn from an experienced professional</h5>
             </div>
             <div class="checkListItem">
               <img class="checkIcon" src="./icons/check.svg" />
-              <h5 class="whiteText">Evidence-based workouts</h5>
+              <h5 class="whiteText">Evidence-based recommendations</h5>
             </div>
             <div class="checkListItem">
               <img class="checkIcon" src="./icons/check.svg" />
-              <h5 class="whiteText">Sustainable habits</h5>
+              <h5 class="whiteText">Sustainable habits and progressions</h5>
             </div>
             <div class="checkListItem">
               <img class="checkIcon" src="./icons/check.svg" />
-              <h5 class="whiteText">Coaching by email & video</h5>
+              <h5 class="whiteText">Accountability, enthusiasm, and support</h5>
             </div>
           </div>
           <div class="checkBlock">
             <div class="checkListItem">
               <img class="XIcon" src="./icons/x.svg" />
-              <h5 class="whiteText">No generic programs</h5>
+              <h5 class="whiteText">No generic programs or AI responses</h5>
             </div>
             <div class="checkListItem">
               <img class="XIcon" src="./icons/x.svg" />
-              <h5 class="whiteText">No amateur guesswork</h5>
+              <h5 class="whiteText">No amateur advice or guesswork</h5>
             </div>
             <div class="checkListItem">
               <img class="XIcon" src="./icons/x.svg" />
-              <h5 class="whiteText">No trendy gimmicks</h5>
+              <h5 class="whiteText">No trendy gimmicks or pseudoscience</h5>
             </div>
             <div class="checkListItem">
               <img class="XIcon" src="./icons/x.svg" />
-              <h5 class="whiteText">No extreme diets</h5>
+              <h5 class="whiteText">
+                No extreme diets or unreasonable demands
+              </h5>
             </div>
             <div class="checkListItem">
               <img class="XIcon" src="./icons/x.svg" />
-              <h5 class="whiteText">No struggling alone</h5>
+              <h5 class="whiteText">
+                No struggling alone or feeling neglected
+              </h5>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div id="mattBio">
-        <div id="mattPic" onclick="location.href='about.html'"></div>
-        <div>
-          <p id="bioText">
-            I want to teach you how to lift weights correctly so you can
-            minimize the risks and get great results.
-            <br /><br />
-            Exercise shouldn't be about getting tired or hurt.
-            <br /><br />
-            The goal is tangible improvement and feeling better.
-          </p>
-          <br /><br />
-          <p id="bioSig" onclick="location.href='about.html'">
-            <span class="magentaText">Coach</span> Matt Talley
-          </p>
         </div>
       </div>
 
@@ -301,19 +307,19 @@
       <div class="callToAction">
         <div class="actionBox">
           <h2 class="whiteText">
-            Are you ready to
-            <span class="magentaTextBright">workout with confidence?</span>
+            Are you ready for
+            <span class="magentaTextBright">professional support?</span>
           </h2>
           <br /><br />
           <h3 class="whiteText">
             Would you like for everything you're doing to be part of an
             expertly-constructed plan to
-            <span class="magentaTextBright">achieve your goals?</span>
+            <span class="magentaTextBright">improve your health and fitness?</span>
           </h3>
         </div>
         <button
           type="button"
-          onclick="location.href='signup.html'"
+          onclick="location.href = 'signup.html'"
           class="signUpButton"
         >
           SIGN UP
