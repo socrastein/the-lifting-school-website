@@ -1,0 +1,1 @@
+import"./DzLoQ49B.js";import{C as e,U as t,g as n}from"./CHdQ_QcY.js";var r=e({__name:`signup`,setup(e){return(e,r)=>(t(),n(`div`))}});export{r as default};

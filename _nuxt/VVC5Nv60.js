@@ -1,0 +1,1 @@
+import{C as e,U as t,g as n,q as r}from"./CHdQ_QcY.js";var i=[`id`],a=Object.assign(e({__name:`ProseH1`,props:{id:{}},setup(e){return(a,o)=>(t(),n(`h2`,{id:e.id,class:`h1`},[r(a.$slots,`default`)],8,i))}}),{__name:`ProseH1`});export{a as default};

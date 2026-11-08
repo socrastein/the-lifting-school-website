@@ -1,0 +1,1 @@
+import{C as e,U as t,g as n,q as r}from"./CHdQ_QcY.js";var i=[`id`],a=Object.assign(e({__name:`ProseH6`,props:{id:{}},setup(e){return(a,o)=>(t(),n(`p`,{id:e.id,class:`h6 imageCaption`},[r(a.$slots,`default`)],8,i))}}),{__name:`ProseH6`});export{a as default};
