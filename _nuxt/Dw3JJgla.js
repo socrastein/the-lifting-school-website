@@ -1,1 +1,0 @@
-import{U as e,g as t,q as n}from"./CHdQ_QcY.js";import{t as r}from"#entry";var i={};function a(r,i){return e(),t(`tr`,null,[n(r.$slots,`default`)])}var o=Object.assign(r(i,[[`render`,a]]),{__name:`ProseTr`});export{o as default};
