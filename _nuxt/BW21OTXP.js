@@ -1,0 +1,1 @@
+import{B as e,S as t,W as n,h as r}from"./2g_BoS8H.js";var i=[`id`],a=Object.assign(t({__name:`ProseH1`,props:{id:{}},setup(t){return(a,o)=>(e(),r(`h2`,{id:t.id,class:`h1`},[n(a.$slots,`default`)],8,i))}}),{__name:`ProseH1`});export{a as default};

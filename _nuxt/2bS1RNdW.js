@@ -1,0 +1,1 @@
+import"./jc5rkIZi.js";import{B as e,S as t,h as n}from"./2g_BoS8H.js";var r=t({__name:`signup`,setup(t){return(t,r)=>(e(),n(`div`))}});export{r as default};

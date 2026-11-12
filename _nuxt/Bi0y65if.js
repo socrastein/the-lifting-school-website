@@ -1,0 +1,1 @@
+import{t as e}from"./rxXpZ1Oh.js";import{B as t,S as n,p as r}from"./2g_BoS8H.js";var i=Object.assign(n({__name:`ProseImg`,props:{src:{default:``},alt:{default:``}},setup(n){return(i,a)=>{let o=e;return t(),r(o,{src:n.src,alt:n.alt,sizes:`(max-width: 40rem) 100vw, 40rem`},null,8,[`src`,`alt`])}}}),{__name:`ProseImg`});export{i as default};

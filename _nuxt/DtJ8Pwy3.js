@@ -1,1 +1,0 @@
-function e(e,t,n){return n===t?e[(e.indexOf(n)+1)%e.length]??n:n}export{e as t};

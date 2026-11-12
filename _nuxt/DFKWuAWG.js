@@ -1,0 +1,1 @@
+import{t as e}from"./DK3Fl9T5.js";import{B as t,W as n,h as r}from"./2g_BoS8H.js";import{t as i}from"#entry";var a=e({default:()=>l}),o={},s={class:`largeQuoteContainer`};function c(e,i){return t(),r(`div`,s,[n(e.$slots,`default`,{},void 0,!0)])}var l=Object.assign(i(o,[[`render`,c],[`__scopeId`,`data-v-ed569bc1`]]),{__name:`BlogQuoteLarge`});export{a as n,l as t};
