@@ -1,0 +1,1 @@
+function e(e){return e.split(`-`).filter(Boolean).map(e=>e.charAt(0).toUpperCase()+e.slice(1)).join(` `)}export{e as t};
